@@ -1,6 +1,6 @@
 let data = [
     {id: 1, image:'https://static.thcdn.com/images/small/webp//productimg/original/13811675-9994964348315184.jpg',name: 'Best of Dermstore x Skin Cancer Foundation Sun Care Kit - $150 Value', banner_text: 'Up to 65% Savings on Best of Dermstore',popup_text: 'Save up to 65% on Best of Dermstore kits. While stock lasts.', ratings_reviews: '4.75 Stars 4 Reviews',ratingValue: 4.75,reviewCount: 4,price: 50,name2: 'Best of Dermstore x Skin Cancer Foundation Sun Care Kit - $150 Value',},
-    {id: 2, image:'https://static.thcdn.com/images/small/webp//productimg/original/11289609-1174892770940184.jpg',name: 'SkinCeuticals C E Ferulic (1 fl. oz.)', banner_text:"Up to 15% savings on Auto-Replenishment" ,popup_text: '',ratings_reviews: '4.75 Stars 4532 Reviews',ratingValue: 4.75,reviewCount: 4532, price:169,name2: 'SkinCeuticals C E Ferulic (1 fl. oz.)',},
+    {id: 2, image:'https://static.thcdn.com/images/small/webp//productimg/original/11289609-1174892770940184.jpg',name: 'SkinCeuticals C E Ferulic (1 fl. oz.)', banner_text:"" ,popup_text: '',ratings_reviews: '4.75 Stars 4532 Reviews',ratingValue: 4.75,reviewCount: 4532, price:169,name2: 'SkinCeuticals C E Ferulic (1 fl. oz.)',},
     {id: 3, image:'https://static.thcdn.com/images/small/webp//productimg/original/11370303-1074944341868735.jpg',name: 'EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)', banner_text: 'Up to 15% savings on Auto-Replenishment',popup_text: 'Enjoy up to 15% off your initial purchase and 15% savings on future replenishment orders.',ratings_reviews: '4.79 Stars 4482 Reviews',ratingValue: 4.79,reviewCount: 4482,price: 39,name2: 'EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)',},  
     {id: 4, image:'https://static.thcdn.com/images/small/webp//productimg/original/13278644-1174951890758541.jpg',name: 'Best of Dermstore Refresh Edit - $640 Value', banner_text: 'Up to 65% Savings on Best of Dermstore',popup_text: 'Save up to 65% on Best of Dermstore kits. While stock lasts.', ratings_reviews: '5.0 Stars 4 Reviews',ratingValue: 5,reviewCount: 4,price: 150,name2: 'Best of Dermstore Refresh Edit - $640 Value',},
     {id: 5, image:'https://static.thcdn.com/images/small/webp//productimg/original/12596429-3594871019700125.jpg',name: 'SkinMedica TNS Advanced+ Serum (1 oz.)', banner_text: 'Up to 15% savings on Auto-Replenishment',popup_text: 'Enjoy up to 15% off your initial purchase and 15% savings on future replenishment orders.',ratings_reviews: '4.56 Stars 252 Reviews',ratingValue: 4.56,reviewCount: 252,price: 295,name2: 'SkinMedica TNS Advanced+ Serum (1 oz.)',},
@@ -22,16 +22,15 @@ let getData=()=>{
      if(banners!=="")
      {
      banners.innerText=banner_text
-     banners.style.border="1px solid red"
+     banners.style.border="1px solid rgb(204,204,204)"
+     banners.style.width="90%"
+     banners.style.margin="auto"
      }
      banners.setAttribute("class","banners")
-     
-
-     
-     
      let prices = document.createElement("p")
      prices.innerText=`$${price}`
      let box = document.createElement("div")
+     box.setAttribute("class","cartdiv");
      let button=document.createElement("button")
      button.setAttribute("class","buybutton")
      button.innerText="QUICK BUY"

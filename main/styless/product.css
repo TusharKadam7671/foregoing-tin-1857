@@ -3,17 +3,18 @@
     width: 100%;
     border: 5px solid gold;
 }
-#container>div{
+/* #container>div{
 
     border: 1px solid teal;
-}
+} */
 #container img{
 
    width: 100%;
+   
 
 }
 #container>div:first-child{
-    width: 30%;
+    width: 25%;
 }
 #container>div:last-child{
     width: 70%;
@@ -27,7 +28,9 @@
     text-align: center;
 }
 #product>div{
-    height: 5%;
+    height:auto;
+    border: 1px solid green;
+   
 }
 
 .buybutton{
@@ -36,7 +39,7 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-bottom: 5px;
+    
 }
-/* .banners{
-    border: 1px solid red;
-} */
+

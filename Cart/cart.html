@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./Styles/cart.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="container">
+            <div id="box1">
+                <p>Your Cart</p>
+                <button class="button" onclick="location.href='checkout.html';">
+                    <img src="data:image/png;base64,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" alt="lock_image" id="lock_image">
+                    <p>CHECKOUT SECURELY NOW</p>
+                </button>
+            </div>
+
+            <div id="box2">
+                <div id="product_details">
+                    <table id="cart_table">
+                        <thead id="thead">
+                            <tr>
+                                <th class="th_items">Items</th>
+                                <th class="th_price">Price</th>
+                                <th class="th_quantity">Quantity</th>
+                                <th class="th_subtotal">Subtotal</th>
+                                <th class="th_remove">X</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="gift_div"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

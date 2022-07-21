@@ -8,7 +8,7 @@ let incrementFunc=()=>{
 let decrementFunc=()=>{
     console.log("minus")
     cart_data[event.target.id].qauntity-=1;
-    if(cart_data[event.target.id].qauntity==0){
+    if(cart_data[event.target.id].qauntity<1){
         removeFunc(event)
     }else{
         localStorage.setItem("cart_data",JSON.stringify(cart_data));
@@ -33,6 +33,7 @@ let append=(data)=>{
 
     data.forEach((el,index)=>{
         let row=document.createElement("tr");
+        // row.style.borderBottom="1px solid";
 
         let td_item=document.createElement("td");
         td_item.setAttribute("class","td_item");

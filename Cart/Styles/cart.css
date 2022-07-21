@@ -5,6 +5,9 @@
 #container{
     width: 100%;
 }
+/* *{
+    box-sizing: border-box;
+} */
 
 /* ------------------box 1-------------------- */
 #box1{
@@ -85,9 +88,39 @@
 
 /*-------------- t body ------------- */
 .image_div>img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+}
+tr{
+    /* background-color: aqua; */
+    border-bottom: 1px gray;
 }
 td{
     text-align: center;
+}
+.item_div{
+    display: flex;
+    /* border: 1px solid; */
+    height: 90px;
+}
+.image_div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details_div{
+    width: 75%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.td_qty>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* background-color: red; */
 }

@@ -1,0 +1,126 @@
+#main{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 100%;
+}
+/* *{
+    box-sizing: border-box;
+} */
+
+/* ------------------box 1-------------------- */
+#box1{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+#box1>p{
+    font-size: 23px;
+    margin: 0px;
+}
+#lock_image{
+    width: 30px;
+    height: 30px;
+    /* background-color: black; */
+}
+.button>p{
+    background-color: black;
+    color: white;
+    max-height: 100%;
+}
+.button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+
+/* -----------------------box 2------------------------ */
+#box2{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 10%;
+}
+#product_details{
+    
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 65%;
+  
+}
+#cart_table{
+    width: 100%;
+}
+.th_items{
+    width: 50%;
+    padding-top: 10px;
+    text-align: left;
+}
+.th_price{
+    padding-top: 10px;
+    width: 15%;
+}
+.th_quantity{
+    padding-top: 10px;
+    width: 15%;
+}
+.th_subtotal{
+    padding-top: 10px;
+    width: 15%;
+}
+.th_remove{
+    padding-top: 10px;
+    width: 5%;
+}
+
+#gift_div{
+    width: 30%;
+    border: 1px solid;
+}
+
+
+/*-------------- t body ------------- */
+.image_div>img{
+    width: 60px;
+    height: 60px;
+}
+tr{
+    /* background-color: aqua; */
+    border-bottom: 1px gray;
+}
+td{
+    text-align: center;
+}
+.item_div{
+    display: flex;
+    /* border: 1px solid; */
+    height: 90px;
+}
+.image_div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details_div{
+    width: 75%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.td_qty>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* background-color: red; */
+}

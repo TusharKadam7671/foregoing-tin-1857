@@ -1,3 +1,6 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
 #main{
     margin: 0px;
     padding: 0px;
@@ -80,10 +83,7 @@
     width: 5%;
 }
 
-#gift_div{
-    width: 30%;
-    border: 1px solid;
-}
+
 
 
 /*-------------- t body ------------- */
@@ -132,4 +132,29 @@ td{
 #cart_total_row{
     display: flex;
     justify-content: space-between;
+}
+
+/* gift div */
+#gift_div{
+    width: 30%;
+    /* border: 1px solid; */
+    
+   
+}
+#toggle1,#toggle2,#toggle3{
+    border: 1px solid white;
+    padding: 3px;
+    background-color: whitesmoke;
+}
+h5,p{
+    padding-left: 15px;
+}
+#first,#second,#third{
+    display: flex;
+    border: 1px solid;
+    margin: 5px;
+}
+
+pre{
+    font-size: 15px;
 }

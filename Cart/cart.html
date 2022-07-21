@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./Styles/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -51,7 +54,32 @@
                         <p>Cart Subtotal: <span>$</span><span id="cart_total">0</span></p>
                     </div> -->
                 </div>
-                <div id="gift_div"></div>
+                <div id="gift_div">
+                    <div id="toggle1" onclick="myFunction()">
+                        <h5 id="toggle1.1"><pre id="toggle1.1">Gift Selection          ▼</pre></h5>
+                        <p id="toggle1.2">Choose your gift with any purchase over $50</p>
+                    </div>
+                    <div id="first" onclick="addToCart(1.1)">
+                        <div><img src="https://s1.thcdn.com//productimg/70/70/13179323-1794969739110482.jpg" alt="image"></div>
+                        <div><p>ClarityRx Good To Go Sample ($1 Value)</p></div>
+                    </div>
+                    <div id="toggle2" onclick="myFunction()">
+                        <h5 id="toggle2.1"> <pre id="toggle2.1">Gift Selection          ▼</pre></h5>
+                        <p id="toggle2.2">Choose your gift with any purchase over $125</p>
+                    </div>
+                    <div id="second" onclick="addToCart(2.1)">
+                        <div><img src="https://s1.thcdn.com//productimg/70/70/13717263-1264947204221910.jpg" alt="image"></div>
+                        <div><p>DevaCurl SuperCream Rich Coconut-Infused Definer 3 oz ($15 Value)</p></div>
+                    </div>
+                    <div id="toggle3" onclick="myFunction()">
+                        <h5 id="toggle3.1"><pre id="toggle3.1">Gift Selection          ▼</pre></h5>
+                        <p id="toggle3.2">Choose your gift with any purchase over $175</p>
+                    </div>
+                    <div id="third" onclick="addToCart(3.1)">
+                        <div><img src="https://s1.thcdn.com//productimg/70/70/13733602-1734971279277656.jpg" alt="image"></div>
+                        <div><p>EltaMD UV Clear Deluxe 0.5 oz (Worth $16.00)</p></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

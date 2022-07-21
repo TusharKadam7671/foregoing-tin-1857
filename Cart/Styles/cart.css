@@ -1,5 +1,6 @@
 *{
     font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 #main{
     margin: 0px;
@@ -53,7 +54,7 @@
 }
 #product_details{
     
-    border-top: 1px solid gray;
+    /* border-top: 1px solid gray; */
     border-bottom: 1px solid gray;
     width: 65%;
   
@@ -61,6 +62,7 @@
 .cart_table{
     width: 100%;
 }
+
 .th_items{
     width: 50%;
     padding-top: 10px;
@@ -82,6 +84,9 @@
     padding-top: 10px;
     width: 5%;
 }
+thead tr th{
+    border-top: 0.5px solid gray;
+}
 
 
 
@@ -93,8 +98,14 @@
 }
 tr{
     /* background-color: aqua; */
-    border-bottom: 1px gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
+tr td {
+    border-top: 0.5px solid rgb(124, 124, 124);
+    /* background-color: aqua; */
+}
+
 td{
     text-align: center;
 }
@@ -146,7 +157,7 @@ td{
     padding: 3px;
     background-color: whitesmoke;
 }
-h5,p{
+#gift_div>h5,#gift_div>p{
     padding-left: 15px;
 }
 #first,#second,#third{
@@ -157,4 +168,42 @@ h5,p{
 
 pre{
     font-size: 15px;
+}
+
+
+/* ----------------box 2.1--------------- */
+#box2-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    height: 80px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+#box2-1>input{
+    width: 300px;
+    height: 50%;
+    border: 2px solid;
+}
+#box2-1>button{
+    width: 100px;
+    height: 50%;
+    margin-bottom: 0px;
+}
+
+/* -----BOX 2.2----- */
+#box2-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+}
+#box2-2 button{
+    height: 50%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
 }

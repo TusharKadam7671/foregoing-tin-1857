@@ -55,7 +55,7 @@
     width: 65%;
   
 }
-#cart_table{
+.cart_table{
     width: 100%;
 }
 .th_items{
@@ -123,4 +123,13 @@ td{
     align-items: center;
     margin: auto;
     /* background-color: red; */
+}
+#cart_subtotal_text{
+    font-weight: normal;
+}
+
+/* ------------------- */
+#cart_total_row{
+    display: flex;
+    justify-content: space-between;
 }

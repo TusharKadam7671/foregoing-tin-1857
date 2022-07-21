@@ -22,7 +22,7 @@
             <div id="box2">
                 <div id="product_details">
                     <table id="cart_table">
-                        <thead id="thead">
+                        <thead class="thead">
                             <tr>
                                 <th class="th_items">Items</th>
                                 <th class="th_price">Price</th>
@@ -35,6 +35,21 @@
                             <!-- append cart data here -->
                         </tbody>
                     </table>
+                    <table class="cart_table">
+                        <thead class="thead">
+                            <tr>
+                                <th class="th_items"><p>Rewards members earn <span id="points"></span> points on this order</p></th>
+                                <th class="th_price"></th>
+                                <th class="th_quantity"> <p id="cart_subtotal_text">Cart Subtotal:</p></th>
+                                <th class="th_subtotal"> <span>$</span><span id="cart_total">0</span></th>
+                                <th class="th_remove"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- <div id="cart_total_row">
+                        <p>Rewards member earn <span id="points"></span> points on this order</p>
+                        <p>Cart Subtotal: <span>$</span><span id="cart_total">0</span></p>
+                    </div> -->
                 </div>
                 <div id="gift_div"></div>
             </div>

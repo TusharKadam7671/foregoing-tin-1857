@@ -184,7 +184,7 @@ td{
 #first>div,#second>div,#third>div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 #first>div>img,#second>div>img,#third>div>img{

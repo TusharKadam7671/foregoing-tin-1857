@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
+    <link rel="stylesheet" href="./Styles/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
     <div id="main_container">
@@ -19,13 +28,13 @@
 
       <div id="container">
         <div id="user_details">
-          <div id="address">
-            <p class="normal">1. Delivery Address</p>
-            <p class="bold">Country/Region</p>
+          <div id="address_div">
+            <p class="bold">1. Delivery Address</p>
+            <p class="normal">Country/Region</p>
             <div id="country"><p>United States</p></div>
-            <p class="bold">Full Name</p>
+            <p class="normal">Full Name</p>
             <input type="text" name="" id="full_name" class="input_box" />
-            <p class="bold">Address Search</p>
+            <p class="normal">Address Search</p>
             <input
               type="text"
               name=""
@@ -38,27 +47,29 @@
             <p class="open_manual" id="open_manual">
               or Enter Address Manually
             </p>
-            <p class="bold">Address</p>
+            <div id="manual">
+            <p class="normal">Address</p>
             <input type="text" name="" id="address" class="input_box" />
-            <p class="bold">Apartment/Suite number</p>
+            <p class="normal">Apartment/Suite number</p>
             <input type="text" name="" id="apartment" class="input_box" />
-            <p class="bold">Town/City</p>
+            <p class="normal">Town/City</p>
             <input type="text" name="" id="town_city" class="input_box" />
-            <p class="bold">State</p>
+            <p class="normal">State</p>
             <input type="text" name="" id="state" class="input_box" />
-            <p class="bold">Zip Code/Postcode</p>
+            <p class="normal">Zip Code/Postcode</p>
             <input type="text" name="" id="zipcode" class="input_box" />
+            </div>
             <!-- manual address end -->
 
-            <p class="bold">Contact Number</p>
+            <p class="normal">Contact Number</p>
             <input type="number" name="" id="contact" class="input_box" />
             <p class="open_manual">Why do we need your number?</p>
           </div>
 
           <div id="option">
-            <p class="normal">2. Select Delivery Option</p>
-            <div id="option_div" class="bold">
-              <i class="material-icons">Info</i>
+            <p class="bold">2. Select Delivery Option</p>
+            <div id="option_div" class="normal">
+              <i class="material-icons">info</i>
               <p id="option_text">
                 Please enter your address so we can calculate your delivery
                 options.
@@ -67,7 +78,7 @@
           </div>
 
           <div id="payment_method">
-            <p class="normal">3. Select Payment Method</p>
+            <p class="bold">3. Select Payment Method</p>
             <div id="card">
               <div class="card_div"><p>Credit/Debit Card</p></div>
               <div id="card_images">
@@ -174,3 +185,4 @@
     </div>
   </body>
 </html>
+<script src="./Scripts/checkout.js"></script>

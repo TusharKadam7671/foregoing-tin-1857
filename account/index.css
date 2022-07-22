@@ -1,0 +1,147 @@
+*{
+    font-family:"lato regular",Helvetica,Arial,sans-serif;
+  }
+  .account-box{
+    display: flex;
+    float: right;
+    margin-top:39px;
+    margin-right: 180px;
+    font-size: 14px;
+    width: 110px;
+    height: 50px;
+  }
+  .account-box img{
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  }
+  .account
+  {
+    margin-top: 12px;
+  }
+  .dropdown-menu{
+    display: none;
+    position: fixed;
+    left: 870px;
+    background-color: #ffff;
+    margin-top: 43px;
+    width: 310px;
+    height: 310px;
+  } 
+  a{
+    text-decoration: none;
+  }
+  .account-box:hover  .dropdown-menu {
+     display: block;
+     background-color:#f2f2f2;
+  }
+  .account-box:hover  {
+    background-color: #f2f2f2;
+  }
+
+  .account-box img{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+.box-1 {
+  background-color:#f2f2f2;
+  height: 100px;
+}
+.box-1 div:nth-child(1){
+background-color:black ;
+height: 20px;
+margin-left: 12px;
+margin-right: 12px;
+margin: 12px;
+padding: 12px;
+}
+.box-1 div:nth-child(1) a{
+color: white;
+margin-left: 100px;
+padding-top: -5px;
+font-size: 13px;
+}
+.box-1 div:nth-child(2){
+background-color:white;
+border: 2px solid black ;
+height: 20px;
+margin-left: 12px;
+margin-right: 12px;
+padding: 12px;
+margin: 12px;
+}
+.box-1 div:nth-child(2) a{
+color: black;
+margin-left: 90px;
+font-size: 13px;
+
+}
+.box-2 {
+  background-color:white;
+  height: 200px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.box-2 > div >a {
+  margin-left: 15px;
+}
+.box-2 >div:nth-child(1){
+height: 40px;
+
+}
+.box-2 div:nth-child(1) a{
+color: black;
+font-size: 13px;
+margin-top: 10px;
+}
+.box-2 >div:nth-child(2){
+background-color:white;
+
+}
+.box-2 div:nth-child(2) a{
+color: black;
+font-size: 13px;
+}
+.box-2 >div:nth-child(3){
+background-color:white;
+
+}
+.box-2 div:nth-child(3) a{
+color: black;
+font-size: 13px;
+}
+.box-2 >div:nth-child(4){
+background-color:white;
+
+}
+.box-2 div:nth-child(4) a{
+color: black;
+font-size: 13px;
+}
+.box-2 >div:nth-child(5){
+background-color:white;
+
+}
+.box-2 div:nth-child(5) a{
+color: black;
+font-size: 13px;
+}
+.box-2 div:nth-child(1):hover {
+background-color:#f2f2f2;
+}
+.box-2 div:nth-child(2):hover {
+background-color:#f2f2f2;
+}
+.box-2 div:nth-child(3):hover {
+background-color:#f2f2f2;
+}
+.box-2 div:nth-child(4):hover {
+background-color:#f2f2f2;
+}
+
+.box-1 > div:nth-child(1):hover{
+background-color:rgb(74, 73, 73);
+}
+.box-1 > div:nth-child(2):hover{
+background-color:#e0e0e0;
+}

@@ -9,7 +9,7 @@ let products=[
       ratingValue: 4.75,
       reviewCount: 4,
       price: 50,
-      qauntity:1,
+      quantity:1,
       name2: 'Best of Dermstore x Skin Cancer Foundation Sun Care Kit - $150 Value',
     },
     {
@@ -22,7 +22,7 @@ let products=[
       ratingValue: 4.75,
       reviewCount: 4532,
       price: 169,
-      qauntity:1,
+      quantity:1,
       name2: 'SkinCeuticals C E Ferulic (1 fl. oz.)',
     },
     {
@@ -35,7 +35,7 @@ let products=[
       ratingValue: 4.79,
       reviewCount: 4482,
       price: 39,
-      qauntity:1,
+      quantity:1,
       name2: 'EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)',
     },
     {
@@ -48,7 +48,7 @@ let products=[
       ratingValue: 5,
       reviewCount: 4,
       price: 150,
-      qauntity:1,
+      quantity:1,
       name2: 'Best of Dermstore Refresh Edit - $640 Value',
     },
     {
@@ -61,7 +61,7 @@ let products=[
       ratingValue: 4.56,
       reviewCount: 252,
       price: 295,
-      qauntity:1,
+      quantity:1,
       name2: 'SkinMedica TNS Advanced+ Serum (1 oz.)',
     },
     {
@@ -74,7 +74,7 @@ let products=[
       ratingValue: 4.81,
       reviewCount: 273,
       price: 43,
-      qauntity:1,
+      quantity:1,
       name2: 'Obagi Medical Nu-Derm Toner (6.7 fl. oz.)',
     },
     {
@@ -87,7 +87,7 @@ let products=[
       ratingValue: 4.64,
       reviewCount: 665,
       price: 122,
-      qauntity:1,
+      quantity:1,
       name2: 'Sunday Riley GOOD GENES All-In-One Lactic Acid Treatment (0.5 oz. - $175 Value)',
     },
     {
@@ -100,7 +100,7 @@ let products=[
       ratingValue: 4.66,
       reviewCount: 700,
       price: 32,
-      qauntity:1,
+      quantity:1,
       name2: 'Paula\'s Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)',
     },
     {
@@ -113,7 +113,7 @@ let products=[
       ratingValue: 4.7,
       reviewCount: 506,
       price: 36,
-      qauntity:1,
+      quantity:1,
       name2: 'Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.',
     },
     {
@@ -126,7 +126,7 @@ let products=[
       ratingValue: 4.73,
       reviewCount: 177,
       price: 49,
-      qauntity:1,
+      quantity:1,
       name2: 'Oribe Gold Lust Repair Restore Shampoo (8.5 fl. oz.)',
     },
     {
@@ -139,7 +139,7 @@ let products=[
       ratingValue: 4.8,
       reviewCount: 1725,
       price: 136,
-      qauntity:1,
+      quantity:1,
       name2: 'SkinCeuticals Triple Lipid Restore 242 (1.6 fl. oz.)',
     },
 ]  

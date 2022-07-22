@@ -30,9 +30,9 @@
         <div id="user_details">
           <div id="address_div">
             <p class="bold">1. Delivery Address</p>
-            <p class="normal">Country/Region</p>
+            <p class="normal">*Country/Region</p>
             <div id="country"><p>United States</p></div>
-            <p class="normal">Full Name</p>
+            <p class="normal">*Full Name</p>
             <input type="text" name="" id="full_name" class="input_box" />
             <p class="normal">Address Search</p>
             <input
@@ -48,20 +48,20 @@
               or Enter Address Manually
             </p>
             <div id="manual">
-            <p class="normal">Address</p>
+            <p class="normal">*Address</p>
             <input type="text" name="" id="address" class="input_box" />
-            <p class="normal">Apartment/Suite number</p>
+            <p class="normal">*Apartment/Suite number</p>
             <input type="text" name="" id="apartment" class="input_box" />
-            <p class="normal">Town/City</p>
+            <p class="normal">*Town/City</p>
             <input type="text" name="" id="town_city" class="input_box" />
-            <p class="normal">State</p>
+            <p class="normal">*State</p>
             <input type="text" name="" id="state" class="input_box" />
-            <p class="normal">Zip Code/Postcode</p>
+            <p class="normal">*Zip Code/Postcode</p>
             <input type="text" name="" id="zipcode" class="input_box" />
             </div>
             <!-- manual address end -->
 
-            <p class="normal">Contact Number</p>
+            <p class="normal">*Contact Number</p>
             <input type="number" name="" id="contact" class="input_box" />
             <p class="open_manual">Why do we need your number?</p>
           </div>
@@ -118,11 +118,11 @@
                   class="card_logos"
                 />
               </div>
-              <p class="normal">Card Number</p>
+              <p class="normal">*Card Number</p>
               <input type="number" name="" id="card_number" class="input_box" />
-              <p class="normal">Name on card</p>
+              <p class="normal">*Name on card</p>
               <input type="text" name="" id="name_on_card" class="input_box" />
-              <p class="normal">Expiry Date</p>
+              <p class="normal">*Expiry Date</p>
               <select class="select" name="" id="month">
                 <option value="">Month</option>
                 <option value="1">01</option>
@@ -157,11 +157,11 @@
                 <option value="35">35</option>
               </select>
 
-              <p id="cvv_p" class="normal">Security code (CV2)</p>
+              <p id="cvv_p" class="normal">*Security code (CV2)</p>
               <input type="number" name="" id="cvv_i" class="input_box" />
 
               <div id="checkbox_div">
-                <input type="checkbox" />
+                <input id="checkbox" type="checkbox" />
                 <p class="checkbox_text">
                   Use my shipping address as my cardholder address
                 </p>

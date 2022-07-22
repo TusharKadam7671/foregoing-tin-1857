@@ -2,6 +2,13 @@
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    cursor: pointer;
+}
 #main{
     margin: 0px;
     padding: 0px;
@@ -42,6 +49,7 @@
     justify-content: center;
     background-color: black;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 
@@ -50,7 +58,7 @@
     display: flex;
     width: 90%;
     margin: auto;
-    gap: 10%;
+    gap: 3%;
 }
 #product_details{
     
@@ -147,7 +155,7 @@ td{
 
 /* gift div */
 #gift_div{
-    width: 30%;
+    width: 32%;
     /* border: 1px solid; */
     
    
@@ -156,14 +164,36 @@ td{
     border: 1px solid white;
     padding: 3px;
     background-color: whitesmoke;
+    cursor: pointer;
 }
 #gift_div>h5,#gift_div>p{
     padding-left: 15px;
 }
 #first,#second,#third{
     display: flex;
-    border: 1px solid;
-    margin: 5px;
+    /* border: 1px solid; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin: 5px; */
+    margin-bottom: 5px;
+}
+#first:hover,#second:hover,#third:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    /* border: 2px solid; */
+}
+#first>div,#second>div,#third>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first>div>img,#second>div>img,#third>div>img{
+    width: 60px;
+    height: 60px;
+}
+#first>div>p,#second>div>p,#third>div>p{
+    padding-left: 4px;
+    padding-bottom: 4px;
 }
 
 pre{
@@ -173,21 +203,37 @@ pre{
 
 /* ----------------box 2.1--------------- */
 #box2-1{
-    display: flex;
+    /* display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    gap: 3px;
-    height: 80px;
+    align-items: center; */
+    /* gap: 3px; */
+    height: 110px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-#box2-1>input{
+#box2-1>div:first-child{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+#box2-1>div:last-child{
+    text-align: center;
+    height: 30px;
+}
+#box2-1>div:last-child>p{
+    margin: 0px;
+
+}
+#box2-1>div>input{
     width: 300px;
     height: 50%;
     border: 2px solid;
 }
-#box2-1>button{
+#box2-1>div>button{
     width: 100px;
     height: 50%;
     margin-bottom: 0px;
@@ -279,4 +325,7 @@ pre{
     height: 300px;
     width: 300px;
     /* border: 5px solid; */
+}
+.products4_div>button{
+    width: 90%;
 }

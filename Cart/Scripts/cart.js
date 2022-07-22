@@ -369,3 +369,92 @@ function myFunction(){
          }
      }
  }
+
+//  four suggested prodcts
+let products4=[
+    {
+      id: 1,
+      image: 'https://static.thcdn.com/images/small/webp//productimg/original/13811675-9994964348315184.jpg',
+      name: 'Best of Dermstore x Skin Cancer Foundation Sun Care Kit - $150 Value',
+      banner_text: 'Up to 65% Savings on Best of Dermstore',
+      popup_text: 'Save up to 65% on Best of Dermstore kits. While stock lasts.',
+      ratings_reviews: '4.75 Stars 4 Reviews',
+      ratingValue: 4.75,
+      reviewCount: 4,
+      price: 50,
+      quantity:1,
+      name2: 'Best of Dermstore x Skin Cancer Foundation Sun Care Kit - $150 Value',
+    },
+    {
+      id: 2,
+      image: 'https://static.thcdn.com/images/small/webp//productimg/original/11289609-1174892770940184.jpg',
+      name: 'SkinCeuticals C E Ferulic (1 fl. oz.)',
+      banner_text: '',
+      popup_text: '',
+      ratings_reviews: '4.75 Stars 4532 Reviews',
+      ratingValue: 4.75,
+      reviewCount: 4532,
+      price: 169,
+      quantity:1,
+      name2: 'SkinCeuticals C E Ferulic (1 fl. oz.)',
+    },
+    {
+      id: 3,
+      image: 'https://static.thcdn.com/images/small/webp//productimg/original/11370303-1074944341868735.jpg',
+      name: 'EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)',
+      banner_text: 'Up to 15% savings on Auto-Replenishment',
+      popup_text: 'Enjoy up to 15% off your initial purchase and 15% savings on future replenishment orders.',
+      ratings_reviews: '4.79 Stars 4482 Reviews',
+      ratingValue: 4.79,
+      reviewCount: 4482,
+      price: 39,
+      quantity:1,
+      name2: 'EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)',
+    },
+    {
+      id: 4,
+      image: 'https://static.thcdn.com/images/small/webp//productimg/original/13278644-1174951890758541.jpg',
+      name: 'Best of Dermstore Refresh Edit - $640 Value',
+      banner_text: 'Up to 65% Savings on Best of Dermstore',
+      popup_text: 'Save up to 65% on Best of Dermstore kits. While stock lasts.',
+      ratings_reviews: '5.0 Stars 4 Reviews',
+      ratingValue: 5,
+      reviewCount: 4,
+      price: 150,
+      quantity:1,
+      name2: 'Best of Dermstore Refresh Edit - $640 Value',
+    },]
+
+    let small_container=document.getElementById("products4");
+    products4.forEach((el)=>{
+        let div=document.createElement("div");
+
+        let image=document.createElement("img");
+        image.src=el.image;
+
+        let name=document.createElement("p");
+        name.innerText=el.name;
+
+        let rating=document.createElement("p");
+        rating=`Rating: ${el.ratingValue}`;
+
+        let price=document.createElement("p");
+        price.innerText=el.price;
+
+        let button=document.createElement("button");
+        button.setAttribute("class","button");
+        button.innerHTML=`<p>QUICK BUY</p>`;
+        button.addEventListener("click",function(){
+            toTheCart(el);
+        })
+
+        div.append(image,name,rating,price,button);
+        small_container.append(div)
+    })
+
+    let toTheCart=(el)=>{
+        console.log("el",el)
+        cart_data.push(el);
+        localStorage.setItem("cart_data",JSON.stringify(cart_data));
+        window.location.reload()
+    }

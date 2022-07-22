@@ -207,3 +207,76 @@ pre{
     display: flex;
     align-items: center;
 }
+
+/* --------box 2-3 */
+#box2-3{
+    display: flex;
+    height: 80px;
+    border-top: 0.5px solid gray;
+}
+#box2-3>div:first-child{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    border: 0.5px solid gray;
+    background-color: rgb(204,204,204);
+    width: 30%;
+}
+#box2-3>div:first-child>img{
+    width: 70px;
+    height: 70px;
+    margin: 0px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+#box2-3>div:first-child>div{
+    margin: 0px;
+    height: 50%;
+    padding-right: 2px;
+}
+#box2-3>div:first-child>div>p>span{
+    color: green;
+}
+
+#box2-3>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+#box2-3>div:last-child>button{
+    width: 60%;
+}
+
+
+
+
+/* ------box 3--------- */
+#box3{
+    text-align: center;
+}
+
+#products4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+}
+#products4>div{
+    text-align: center;
+}
+#products4>div>p{
+    height: 25px;
+}
+#products4>div>button{
+    display: block;
+    margin: auto;
+}
+#products4>div>button>p{
+    margin: 0px;
+}
+#products4>div>img{
+    height: 300px;
+    width: 300px;
+    /* border: 5px solid; */
+}

@@ -69,10 +69,10 @@ let append=()=>{
 
 
                 let order_image_div=document.createElement("div");
-                order_image_div.setAttribute("class",order_image_div);
+                order_image_div.setAttribute("class","order_image_div");
 
                 let order_details_div=document.createElement("div");
-                order_details_div.setAttribute("class",order_details_div);
+                order_details_div.setAttribute("class","order_details_div");
 
                 let image=document.createElement("img");
                 image.src=el.image;

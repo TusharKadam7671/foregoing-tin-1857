@@ -1,0 +1,151 @@
+.navbar{
+  /* display: flex; */
+  width: 100%;
+  margin: auto;
+}
+.navbar_items a{
+  font-size: 14px;
+}
+.navbar_items {
+  display: flex;
+  /* border: 1px solid red; */
+}
+ul{ 
+    list-style: none; 
+    /* width: 80%; */
+}
+ a{
+    text-decoration: none;
+    color: black;
+  }
+li{
+  padding: 10px;
+ }
+ul.navbar_items li:hover{
+  background-color: #F2F2F2;
+} 
+.mega_menu{
+  gap: 20px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 50px;
+  /* top: 75px;  */
+  padding: 30px 0px;
+  visibility: hidden;
+  display: flex;
+  background-color: white;
+}
+.container{
+  border-top: 1px solid grey;
+
+}
+.t_for_border{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.navbar_item:hover .mega_menu{
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+}
+.navbar{
+    position: absolute;
+    /* z-index: 1;
+    left: 10px; */
+    /* font-size: 15px; */
+} 
+ul.navbar_items{
+  display: inline-block;
+}
+ul.navbar_items li{
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+ul.navbar_items>li:nth-child(1):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(2):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(3):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(4):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(5):hover .mega_menu{
+  display: flex;
+  /* transition-duration: 3000ms;
+  transition-timing-function: ease-in;    */
+}
+ul.navbar_items>li:nth-child(6):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(7):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(8):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(9):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(10):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(11):hover .mega_menu{
+  display: flex;
+}
+ul.navbar_items>li:nth-child(12):hover .mega_menu{
+  display: flex; 
+}
+ul.navbar_items>li:nth-child(13):hover .mega_menu{
+  display: flex; 
+}
+ul.navbar_items>li:nth-child(14):hover .mega_menu{
+  display: flex; 
+}
+ul.navbar_items>li:last-of-type{
+    margin-left: 15px;
+    /* border: none;  */
+ }
+#t_brand{
+  position: absolute;
+  left: 50px;
+}
+#t_SS{
+  left: 120px;
+}
+#t_BB{
+  left: 50px;
+}
+#t_SC{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#t_Mup{
+  left: 100px;
+}
+#t_HC{
+  left: 350px;
+}
+#t_B_B{
+  left: 300px;
+}
+#t_T_D{
+  left: 600px;
+}
+#t_G_S{
+  left: 810px;
+}
+#t_offer{
+  left: 750px;
+}
+#t_new{
+   left: 1050px;
+}
+#t_skin{
+   left: 200px;
+}

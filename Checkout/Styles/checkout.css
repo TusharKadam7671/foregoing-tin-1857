@@ -52,12 +52,10 @@
 
 
 #user_details{
-    width: 60%;
+    width: 55%;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
-#cart_products_details{
-    width: 38%;
-}
+
 #country{
     border: 1px solid;
     width: 97%;
@@ -200,4 +198,71 @@ margin: 5px;
 #month,#year{
   width: 44%;
   height: 35px;
+}
+
+
+
+
+/* -----------order summary css-------------- */
+
+#cart_products_details{
+  width: 38%;
+  border: 1px solid red;
+}
+
+#item_count{
+  font-size: 15px;
+  font-weight: 500;
+}
+#item_list{
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+#order_div{
+  padding: 7px;
+}
+.small_order_div{
+  width: 100%;
+  display: flex;
+  padding: 5px 20px 5px 20px;
+}
+.order_image_div{
+  display: flex;
+  /* flex-direction: column; */
+}
+.order_image{
+  width: 80px;
+  height: 80px;
+}
+.order_details_div{
+  padding-left: 10px;
+}
+.order_quantity_div,.order_price{
+  font-weight: bold;
+}
+#total_price{
+  font-size: 16px;
+  font-weight: 500;
+}
+#cart_total{
+  height: 80px;
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+#count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
 }

@@ -584,6 +584,57 @@ let sort = ()=>{
 let storeData = (data)=>{
 
  localStorage.setItem("cart_data",JSON.stringify(data))
+}
+
+let filtering=()=>{
+  if(document.getElementById("LessThan10").checked)
+  {
+    
+    let filter = data.filter((el)=>{
+     return el.price<10
+    })
+    data = filter
+    append(data)
+  }
+  else if(document.getElementById("LessThan25").checked)
+  {
+    let filter = data.filter((el)=>{
+      return el.price>=10 && el.price<25
+     })
+     data = filter
+     append(data)
+  }
+  else if(document.getElementById("LessThan50").checked)
+  {
+    let filter = data.filter((el)=>{
+      return el.price>=25 && el.price<50
+     })
+     data = filter
+     append(data)
+  }
+  else if(document.getElementById("LessThan100").checked)
+  {
+    let filter = data.filter((el)=>{
+      return el.price>=50 && el.price<=100
+     })
+     data = filter
+     append(data)
+  }
+  else if(document.getElementById("MoreThan100").checked)
+  {
+    let filter = data.filter((el)=>{
+      return el.price>=100
+     })
+     data = filter
+     append(data)
+  }
+  else
+  {
+    window.location.reload()
+  }
+  
+  
+
 
 
 }

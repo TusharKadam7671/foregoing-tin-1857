@@ -1,0 +1,185 @@
+body{
+    margin:  40px 0;
+}
+
+/* ----------WIDGET STYLING STARTS----------- */
+
+#t_big_box{
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: #F2F2F2;
+    width: 100vw;
+    height: 50px;
+    /* margin: 50px; */
+}
+.delivery{
+  width: 30px;
+  height: 20px;
+  margin: auto;
+}
+.s_box1{
+    /* border: 1px solid teal; */
+    width: 24%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s_box2{
+    /* border: 1px solid teal; */
+    width: 39%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s_box3{
+    /* border: 1px solid teal; */
+    width: 22%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s_box4{
+    /* border: 1px solid teal; */
+    width: 17%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s_box5{
+    /* border: 1px solid teal; */
+    width: 19%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+}
+p{
+    font-size: 12px;
+   
+}
+.to_place_in_middle{
+    display: flex;
+    gap: 35px;
+    margin: auto;
+}
+/* ----------WIDGET STYLING ENDS----------- */
+
+
+/* ----------STRIPBANNER STYLING STARTS----------- */
+
+.stripBanner_text{
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.stripBanner{
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: #CCCCCC;
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+    -webkit-transition : background-color 2s ease-out;
+   /* -moz-transition: background-color 2s ease-out; */
+  /*-o-transition: background-color 2s ease-out; */
+    transition: background-color 2s ease-out;
+}
+.stripBanner:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+    transition:.6s ease;
+    /* transition:.6s ease-out; */
+}
+
+/* ----------STRIPBANNER STYLING ENDS----------- */
+
+/* ----------SLIDER STYLING STARTS----------- */
+
+.t_container{
+    /* border: 1px solid red; */
+    width: 100vw;
+    /* background: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+.swiper{
+    position: relative;
+    /* width: 100%;
+    height: 75vh; */
+}
+.swiper-slide{
+    position: relative;
+  }
+
+.swiper-slide>img{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+}
+.swiper-slide h1{
+    position: absolute;
+    cursor: pointer;
+    top: 150px;
+    right: 150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .swiper-slide p{
+    position: absolute;
+    cursor: pointer;
+    top: 210px;
+    right: 130px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  .swiper-slide button{
+    position: absolute;
+    cursor: pointer;
+    top: 250px;
+    right: 560px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+  }
+  .swiper-slide button:hover{
+    background-color: grey;
+    
+    }
+.swiper-wrapper{
+    padding-bottom: 30px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+   color: white;
+    min-width: 50px;
+   min-height: 50px; 
+   
+}
+.swiper .swiper-pagination-bullet-active{
+    background: black;
+}
+.swiper-pagination{
+    position: absolute;
+    /* bottom: 100px; */
+    /* margin: -50px; */
+}
+/* ----------SLIDER STYLING ENDS----------- */
+
+
+ 

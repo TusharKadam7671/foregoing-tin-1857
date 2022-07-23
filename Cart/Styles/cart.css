@@ -394,7 +394,7 @@ thead tr th{
     height: 80px;
 }
 .details_div>p{
-    font-size: 12px;
+    font-size: 11px;
 }
 .td_qty>div{
     display: flex;
@@ -443,4 +443,123 @@ thead tr th{
     height: 250px;
     width: 250px;
 }
+}
+
+@media only screen and (min-width:0px) and (max-width:500px){
+    /* ------------------box 1-------------------- */
+    #box1{
+        margin-top: 10px;
+    }
+    #box1>p{
+        font-size: 15px;
+    }
+    #lock_image{
+        width: 22px;
+        height: 22px;
+    }
+    .button{
+        height: 32px;
+    }
+    
+    
+    /* -----------------------box 2------------------------ */
+    #box2{
+        flex-direction: column;
+    }
+    #product_details{
+        width: 95%;
+        margin: auto;
+    }
+    
+    .th_items{
+        padding-top: 5px;
+    }
+    .th_price{
+        padding-top: 5px;
+    }
+    .th_quantity{
+        padding-top: 5px;
+    }
+    .th_subtotal{
+        padding-top: 5px;
+    }
+    .th_remove{
+        padding-top: 5px;
+    }
+    thead tr th{
+        border-top: 0.5px solid gray;
+    }
+    
+    
+    
+    
+    /*-------------- t body ------------- */
+    .image_div>img{
+        width: 45px;
+        height: 45px;
+    }
+    .item_div{
+        display: flex;
+        /* border: 1px solid; */
+        height: 80px;
+    }
+    .details_div>p{
+        font-size: 10px;
+    }
+    .td_qty>div{
+        display: block;
+    }
+    
+    
+    /* ------------------- */
+    #cart_total_row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* gift div */
+    #gift_div{
+        width: 95%;
+        margin-top: 10px;
+        
+       
+    }
+    
+    /* ----------------box 2.1--------------- */
+    
+    /* #box2-1>div:first-child{
+        flex-direction: column;
+    } */
+    
+    /* --------box 2-3 */
+    #box2-3>div:first-child{
+        width: 50%;
+        align-items: center;
+    }
+    #box2-3>div:last-child{
+        width: 45%;
+        padding: 5px;
+    }#box2-3>div:first-child>div>p{
+        display: none;
+    }
+    
+    
+    
+    
+    /* ------box 3--------- */
+    #products4{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #products4>div>p{
+        height: 23px;
+    }
+    #products4>div>img{
+        height: 250px;
+        width: 250px;
+    }
+
+
+    #coupon_messege{
+        font-size: 4px;
+    }
 }

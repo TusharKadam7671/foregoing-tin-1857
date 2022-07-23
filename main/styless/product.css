@@ -42,4 +42,19 @@
     margin-bottom: 5px;
     
 }
+#top{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.Pageinstruction{
+    color: rgb(173,174,182);
+}
+#top img{
+    width: 100%;
+}
+
+
+
 

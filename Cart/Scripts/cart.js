@@ -333,7 +333,6 @@ document.getElementById("coupon_button").addEventListener("click",()=>{
             if(input=="masai10")
             {
                 cart_total=cart_total*0.9;
-                console.log("tus",cart_total)
             }
             if(input=="masai30")
             {
@@ -343,6 +342,7 @@ document.getElementById("coupon_button").addEventListener("click",()=>{
             {
                 cart_total=cart_total*0.5;
             }
+            cart_total=cart_total.toFixed(2)
 
             document.getElementById("points").innerText=Math.floor(cart_total*0.5);
             localStorage.setItem("cart_total",JSON.stringify(cart_total));

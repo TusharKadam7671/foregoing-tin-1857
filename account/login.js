@@ -25,6 +25,7 @@ function myFunction(event) {
     if (flag) {
         alert("Successfully logged in!");
         var token = Math.random();
+       
         localStorage.setItem("token", token);
         window.location.href = "index.html"
 

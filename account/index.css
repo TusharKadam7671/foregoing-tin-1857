@@ -1,14 +1,50 @@
 *{
     font-family:"lato regular",Helvetica,Arial,sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar{
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+  }
+  .navbar img{
+    width: 220px;
+    height: 100px;
+    margin-left: 35px;
+    margin-top: 10px;
+    background: transparent;
+  }
+  #search{
+    height: 40px;
+    width: 445px;
+    margin-left: 170px;
+    margin-top: 40px;
+  }
+  
+  #cart{
+    display: flex;
+    float: right;
+    margin-right: -220px;
+    margin-top: 37px;
+  }
+  #cart img{
+    width: 35px;
+    height: 25px;
+  }
+  #cart > div{
+    margin-top: 14px;
+    font-size: 14px; 
   }
   .account-box{
     display: flex;
-    float: right;
     margin-top:39px;
-    margin-right: 180px;
     font-size: 14px;
     width: 110px;
     height: 50px;
+    margin-left: 200px;
   }
   .account-box img{
     height: 24px;

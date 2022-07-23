@@ -6,15 +6,16 @@
       
 }
 #navbar{
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: white;
+   
 }
 img{
-    width: 195px;
-    height: 92px;
+    width: 220px;
+    height: 100px;
     margin-left: 35px;
-    margin-top: -11px;
+    margin-top: 10px;
     background: transparent;
     
 }

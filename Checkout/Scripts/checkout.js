@@ -1,4 +1,6 @@
 
+let user_details=JSON.parse(localStorage.getItem("user_details")) || []
+
 let open_manual=()=>{
         document.getElementById("manual").style.display="block";
 }
@@ -7,6 +9,13 @@ document.getElementById("open_manual").addEventListener("click",open_manual);
 
 
 let submit=()=>{
+
+        // if(document.getElementById("cvv_i").value!="123"){
+        //         alert("Please fill correct details");
+        // }else{
+
+       
+
         if(
                 document.getElementById("full_name").value!="" &&
                 document.getElementById("address").value!="" &&
@@ -19,12 +28,25 @@ let submit=()=>{
                 document.getElementById("card_number").value!="" &&
                 document.getElementById("cvv_i").value!=""
         ){
-                alert("Order Placed Successfully!");
-                window.location.href = "../index.html";
-                localStorage.setItem("Cart_data", JSON.stringify([]));
+                let user_obj={
+                        name:document.getElementById("name_on_card").value,
+                        contact:document.getElementById("contact").value,
+                        card_number:document.getElementById("card_number").value,
+                        cvv:document.getElementById("cvv_i").value
+                }
+
+                user_details[0]=user_obj;
+
+                localStorage.setItem("user_details",JSON.stringify(user_details));
+                
+                window.location.href = "otp.html";
+               
         } else {
                 alert("Please fill all the required information");
               }
+
+
+        // }
           
 }
 

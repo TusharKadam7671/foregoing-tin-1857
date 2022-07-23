@@ -1,0 +1,25 @@
+#singup
+{
+   width: 35%;
+    height: 250px;
+     font-size: 25px;
+     margin-left: 400px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 80px;
+    border-radius: 15px;
+   
+}
+#otpForm>input
+{
+    width: auto;
+   font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+
+
+}
+h2{
+ margin-left: 100px;
+ padding-top: 10px;
+ 
+}

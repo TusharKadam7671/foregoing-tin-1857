@@ -123,12 +123,44 @@ p{
     /* width: 100%;
     height: 75vh; */
 }
+.swiper-slide{
+    position: relative;
+  }
 
 .swiper-slide>img{
+    position: relative;
     width: 100%;
     height: 80vh;
 
 }
+.swiper-slide h1{
+    position: absolute;
+    cursor: pointer;
+    top: 150px;
+    right: 150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .swiper-slide p{
+    position: absolute;
+    cursor: pointer;
+    top: 210px;
+    right: 130px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  .swiper-slide button{
+    position: absolute;
+    cursor: pointer;
+    top: 250px;
+    right: 560px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+  }
+  .swiper-slide button:hover{
+    background-color: grey;
+    
+    }
 .swiper-wrapper{
     padding-bottom: 30px;
 }

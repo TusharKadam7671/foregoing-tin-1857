@@ -52,7 +52,7 @@
 // }
 
 let getData = (data,container)=>{
-    
+    container.innerHtml = null;
     data.forEach(({image,name,banner_text,ratings_reviews,price}) => {
         let images = document.createElement("img")
         images.src=image

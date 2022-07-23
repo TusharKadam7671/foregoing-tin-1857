@@ -31,9 +31,13 @@
 #product>div>img{
     width: 100%;
 }
-#product>div{
-    border: 1px solid tan;
+#product>div>p{
+    height: 25px;
 }
+/* #product>div{
+    border: 1px solid tan;
+    
+} */
 
 
 .buybutton{
@@ -42,6 +46,7 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-bottom: 20px;
     /* margin-bottom: 5px; */
     
 }

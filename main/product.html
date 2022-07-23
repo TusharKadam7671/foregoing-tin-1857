@@ -22,6 +22,20 @@
         <div >
             <h3>Refine</h3>
             <hr>
+            <h3>Price</h3>
+        <hr>
+        <div class="filter">
+           <input type="checkbox" id="LessThan10" name="LessThan10" value="LessThan10">
+           <label for="LessThan10">Less than $10(62)</label><br>
+           <input type="checkbox" id="LessThan25" name="LessThan25" value="LessThan25">
+           <label for="LessThan25">$10 - $25(449)</label><br>
+           <input type="checkbox" id="LessThan50" name="LessThan50" value="LessThan50">
+           <label for="LessThan50">$25 - 50(1557)</label><br>
+           <input type="checkbox" id="LessThan100" name="LessThan100" value="LessThan100">
+           <label for="LessThan100">$50 - $100(1714)</label><br>
+           <input type="checkbox" id="MoreThan100" name="MoreThan100" value="MoreThan100">
+           <label for="MoreThan100">More than $100(749)</label><br>
+        </div>
             <h3>Brand</h3>
             <hr>
         <div class="filter">
@@ -242,15 +256,80 @@
            <input type="checkbox" id="ZincOxide" name="ZincOxide" value="ZincOxide">
            <label for="ZincOxide">ZincOxide (160)</label><br>
         </div>
+        <h3>Preferences</h3>
+        <hr>
+        <div class="filter">
+           <input type="checkbox" id="CrueltyFree" name="CrueltyFree" value="CrueltyFree">
+           <label for="CrueltyFree">Certified Cruelty Free (1120)</label><br>
+           <input type="checkbox" id="Organic" name="Organic" value="Organic">
+           <label for="Organic">Certified Organic (282)</label><br>
+           <input type="checkbox" id="Clean" name="Clean" value="Clean">
+           <label for="Clean">Clean (914)</label><br>
+           <input type="checkbox" id="DermatologistApproved" name="DermatologistApproved" value="DermatologistApproved">
+           <label for="DermatologistApproved">Dermatologist Approved (482)</label><br>
+           <input type="checkbox" id="FragranceFree" name="FragranceFree" value="FragranceFree">
+           <label for="FragranceFree">Fragrance Free (817)</label><br>
+           <input type="checkbox" id="GlutenFree" name="GlutenFree" value="GlutenFree">
+           <label for="GlutenFree">Gluten Free (774)</label><br>
+           <input type="checkbox" id="Hypoallergenic" name="Hypoallergenic" value="Hypoallergenic">
+           <label for="Hypoallergenic">Hypoallergenic (212)</label><br>
+           <input type="checkbox" id="Natural" name="Natural" value="Natural">
+           <label for="Natural">Natural (891)</label><br>
+           <input type="checkbox" id="NonComedogenic" name="NonComedogenic" value="NonComedogenic">
+           <label for="NonComedogenic">Non-Comedogenic (375)</label><br>
+           <input type="checkbox" id="OilFree" name="OilFree" value="OilFree">
+           <label for="OilFree">Oil Free (319)</label><br>
+           <input type="checkbox" id="ParabenFree" name="ParabenFree" value="ParabenFree">
+           <label for="ParabenFree">Paraben Free (1729)</label><br>
+           <input type="checkbox" id="PhthalateFree" name="PhthalateFree" value="PhthalateFree">
+           <label for="PhthalateFree">Phthalate Free (780)</label><br>
+           <input type="checkbox" id="SulfateFree" name="SulfateFree" value="SulfateFree">
+           <label for="SulfateFree">Sulfate Free (1126)</label><br>
+           <input type="checkbox" id="Vegan" name="Vegan" value="Vegan">
+           <label for="Vegan">Vegan (645)</label><br>
+        </div>
+        <h3>Gender</h3>
+        <hr>
+        <div class="filter">
+           <input type="checkbox" id="Boys" name="Boys" value="Boys">
+           <label for="Boys">Boys (13)</label><br>
+           <input type="checkbox" id="Girls" name="Girls" value="Girls">
+           <label for="Girls">Girls (13)</label><br>
+           <input type="checkbox" id="Men" name="Men" value="Men">
+           <label for="Men">Men (1812)</label><br>
+           <input type="checkbox" id="Women" name="Women" value="Women">
+           <label for="Women">Women (3092)</label><br>
+        </div>
+        <h3>Savings</h3>
+        <hr>
+        <div class="filter">
+           <input type="checkbox" id="Upto25" name="Upto25" value="Upto25">
+           <label for="Upto25">Up to 25%(35)</label><br>
+           <input type="checkbox" id="Upto50" name="Upto50" value="Upto50">
+           <label for="Upto50">25% to 50%(55)</label><br>
+           <input type="checkbox" id="Upto75" name="Upto75" value="Upto75">
+           <label for="Upto75">50% - 75%(3)</label><br>
+        </div>
+        <h3>Average Reviews</h3>
+        <hr>
+        <div class="filter">
+           <input type="checkbox" id="Upto3" name="Upto3" value="Upto3">
+           <label for="Upto3">2-3(23)</label><br>
+           <input type="checkbox" id="Upto4" name="Upto4" value="Upto4">
+           <label for="Upto4">3-4(236)</label><br>
+           <input type="checkbox" id="MoreThan4" name="MoreThan4" value="MoreThan4">
+           <label for="MoreThan4">4+(3009)</label><br>
+        </div>
         </div>
         <div >
             <h2>Skin Care</h2>
             <p>At Dermstore, we feature a highly curated collection of skin care products and sets. You'll find professional-strength formulas from top skin care brands, historically only available at a dermatologist's office, and specialty brands from around the world. From acne treatments to natural and anti-aging skin care, whether you're concerned with prevention or in search of an effective solution for a specific issue, you'll find everything you need in our collection. Browse products formulated with the most effective skin care ingredients including vitamins C and E and retinol and explore the industry's leading brands, including SkinCeuticals, SkinMedica, EltaMD, Obagi and Eminence Organic Skin Care. </p>
-            <select name="" id="sort">
+            <select id="sort" onchange="sort()" >
                 <option value="default">Default</option>
-                <option value="bestseller">Bestsellers</option>
+                <option value="bestsellers">Bestsellers</option>
                 <option value="pricelth">Price: Low to high</option>
                 <option value="pricehtl">Price: High to low</option>
+                <option value="atoz">A - Z</option>
             </select>
             <div id="product"></div>
         </div>  
@@ -306,4 +385,4 @@
     </div>
 </body>
 </html>
-<script src="./scripts/product.js" type="module"></script>
+<script src="./scripts/product.js" ></script>

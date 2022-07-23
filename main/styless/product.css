@@ -1,0 +1,45 @@
+#container{
+    display: flex;
+    width: 100%;
+    border: 5px solid gold;
+}
+/* #container>div{
+
+    border: 1px solid teal;
+} */
+#container img{
+
+   width: 100%;
+   
+
+}
+#container>div:first-child{
+    width: 25%;
+}
+#container>div:last-child{
+    width: 70%;
+}
+#product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#product {
+    text-align: center;
+}
+#product>div{
+    height:auto;
+    border: 1px solid green;
+   
+}
+
+.buybutton{
+    width: 95%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+

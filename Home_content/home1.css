@@ -79,6 +79,7 @@ p{
 
 .stripBanner_text{
     font-family: "lato regular",Helvetica,Arial,sans-serif;
+    margin-bottom: 10px;
 }
 
 .stripBanner{
@@ -86,7 +87,7 @@ p{
     /* border: 1px solid red; */
     background-color: #CCCCCC;
     width: 100vw;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -128,9 +129,9 @@ p{
     height: 80vh;
 
 }
-/* .swiper-wrapper{
-    padding: 30px;
-} */
+.swiper-wrapper{
+    padding-bottom: 30px;
+}
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
    color: white;
     min-width: 50px;

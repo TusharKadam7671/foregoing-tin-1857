@@ -119,7 +119,7 @@
                 />
               </div>
               <p class="normal">*Card Number</p>
-              <input type="number" name="" id="card_number" class="input_box" />
+              <input type="number" name="" id="card_number" class="input_box" placeholder="1234 1234 1234 1234" />
               <p class="normal">*Name on card</p>
               <input type="text" name="" id="name_on_card" class="input_box" />
               <p class="normal">*Expiry Date</p>
@@ -180,7 +180,19 @@
 
         </div>
 
-        <div id="cart_products_details"></div>
+        <div id="cart_products_details">
+          <div id="order_div">
+            <div id="count">
+              <div class="bold">Order Summary</div>
+              <div id="item_count">Total count here</div>
+            </div>
+            <div id="item_list"></div>
+            <div id="cart_total">
+              <div class="normal">Total to pay</div>
+              <div id="total_price">Total price here</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

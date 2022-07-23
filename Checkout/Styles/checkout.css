@@ -52,12 +52,10 @@
 
 
 #user_details{
-    width: 60%;
+    width: 55%;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
-#cart_products_details{
-    width: 38%;
-}
+
 #country{
     border: 1px solid;
     width: 97%;
@@ -200,4 +198,325 @@ margin: 5px;
 #month,#year{
   width: 44%;
   height: 35px;
+}
+
+
+
+
+/* -----------order summary css-------------- */
+
+#cart_products_details{
+  width: 38%;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 600px;
+}
+
+#item_count{
+  font-size: 15px;
+  font-weight: 500;
+}
+#item_list{
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#order_div{
+  padding: 7px;
+ 
+  
+}
+.small_order_div{
+  width: 100%;
+  display: flex;
+  padding: 5px 20px 5px 20px;
+}
+.order_image_div{
+  display: flex;
+  /* flex-direction: column; */
+}
+.order_image{
+  width: 80px;
+  height: 80px;
+}
+.order_details_div{
+  padding-left: 20px;
+}
+.order_quantity_div,.order_price{
+  font-weight: bold;
+}
+#total_price{
+  font-size: 16px;
+  font-weight: 800;
+}
+#cart_total{
+  height: 80px;
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+#count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* --------------media query------------- */
+
+@media only screen and (min-width:500px) and (max-width: 900px){
+  #container{
+    width: 90%;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  #user_details{
+    width: 95%;
+}
+  #topbar {
+    height: 60px;
+  }
+  #topbar > div {
+    margin-left: 5%;
+  }
+  #topbar > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  .normal{
+      font-weight: 500;
+      margin-bottom: 6px;
+      font-size: 12px;
+  }
+  .bold{
+      font-weight: 1000;
+      font-size: 16px;
+      margin-top: 6PX;
+      margin-bottom: 3PX;
+  }
+  .open_manual{
+      margin-top: 3px;
+  }
+  #address_div{
+      padding: 8px;
+  }
+  .input_box{
+      height: 20px;
+  }
+  
+  
+  
+
+  #option{
+      margin-top: 8PX;
+      padding: 0PX;
+  }
+    #order_button{
+      margin-top: 8PX;
+      padding: 8PX;
+    }
+    .button{
+      height: 35px;
+  }
+  #tnc{
+      padding: 0px;
+  }
+  
+  
+  
+  
+  #payment_method{
+    margin-top: 8PX;
+    padding: 8PX;
+  }
+  #card{
+    padding: 10px;
+  }
+  #card_images{
+    width: 100%;
+    height: 32px;
+    margin: 0px;
+    display: flex;
+  }
+  .cardDiv{
+    margin-left: 13px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+  #checkbox{
+    padding: 3px;
+  }
+  .checkbox_text{
+    margin-left: 10px;
+  }
+  .card_logos{
+  margin: 0px;
+  height: 32px;
+  width: 40px;
+  }
+  #month,#year{
+    height: 25px;
+  }
+  
+  
+  
+  
+  /* -----------order summary css-------------- */
+  
+  #cart_products_details{
+    width: 95%;
+  }
+  
+  #item_count{
+    font-size: 10px;
+  }
+  #order_div{
+    padding: 6px;
+  }
+  .small_order_div{
+    padding: 4px 18px 4px 18px;
+  }
+  .order_details_div{
+    padding-left: 15px;
+  }
+  #total_price{
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width:0px) and (max-width: 500px){
+  #container{
+    width: 95%;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  #user_details{
+    width: 95%;
+}
+  #topbar {
+    height: 80px;
+  }
+  #topbar > div {
+    margin-left: 25%;
+  }
+  #topbar > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  .normal{
+      font-weight: 500;
+      margin-bottom: 8px;
+      font-size: 14px;
+  }
+  .bold{
+      font-weight: 1000;
+      font-size: 18px;
+      margin-top: 8PX;
+      margin-bottom: 4PX;
+  }
+  .open_manual{
+      margin-top: 4px;
+  }
+  #address_div{
+      padding: 10px;
+  }
+  .input_box{
+      height: 25px;
+  }
+  
+  
+  
+
+  #option{
+      margin-top: 10PX;
+      padding: 0PX;
+  }
+    #order_button{
+      margin-top: 10PX;
+      padding: 10PX;
+    }
+    .button{
+      height: 35px;
+  }
+  #tnc{
+      padding: 0px;
+  }
+  
+  
+  
+  
+  #payment_method{
+    margin-top: 10PX;
+    padding: 10PX;
+  }
+  #card{
+    padding: 15px;
+  }
+  #card_images{
+    width: 100%;
+    height: 32px;
+    margin: 0px;
+    display: flex;
+  }
+  .cardDiv{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  #checkbox{
+    padding: 3px;
+  }
+  .checkbox_text{
+    margin-left: 10px;
+  }
+  .card_logos{
+  margin: 0px;
+  height: 32px;
+  width: 40px;
+  }
+  #month,#year{
+    height: 25px;
+  }
+  
+  
+  
+  
+  /* -----------order summary css-------------- */
+  
+  #cart_products_details{
+    width: 95%;
+  }
+  
+  #item_count{
+    font-size: 10px;
+  }
+  #order_div{
+    padding: 6px;
+  }
+  .small_order_div{
+    padding: 4px 18px 4px 18px;
+  }
+  .order_details_div{
+    padding-left: 15px;
+  }
+  #total_price{
+    font-size: 14px;
+  }
+
 }

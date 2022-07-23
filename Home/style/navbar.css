@@ -32,6 +32,7 @@ ul.navbar_items li:hover{
   visibility: hidden;
   display: flex;
 }
+
 .navbar_item:hover .mega_menu{
   position: absolute;
   opacity: 1;
@@ -99,3 +100,5 @@ ul.navbar_items>li:last-of-type{
     margin-left: 15px;
     /* border: none;  */
  }
+
+

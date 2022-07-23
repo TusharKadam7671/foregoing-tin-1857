@@ -1,3 +1,168 @@
+/* NAVBAR STYLING STARTS */
+
+.tnavbar{
+    /* display: flex; */
+    width: 100%;
+    margin: auto;
+  }
+  .tnavbar_items a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+  }
+  .tnavbar_items a:hover{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+  }
+  .tnavbar_items {
+    display: flex;
+    /* border: 1px solid red; */
+  }
+  .tnavbar ul{ 
+      list-style: none; 
+      /* width: 80%; */
+  }
+   .tmega_menu a{
+      text-decoration: none;
+      color: black;
+    }
+  .tnavbar_items li{
+    padding: 10px;
+   }
+  ul.tnavbar_items li:hover{
+    background-color: #F2F2F2;
+  } 
+  .tmega_menu{
+    gap: 20px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 50px;
+    /* top: 75px;  */
+    padding: 30px;
+    visibility: hidden;
+    display: flex;
+    background-color: white;
+    z-index: 30;
+  }
+  .contHainer{
+    border-top: 1px solid grey;
+  
+  }
+  .t_for_border{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .tnavbar_item:hover .tmega_menu{
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+  }
+  .tnavbar{
+      position: absolute;
+      /* z-index: 1;
+      left: 10px; */
+      /* font-size: 15px; */
+  } 
+  ul.tnavbar_items{
+    display: inline-block;
+  }
+  ul.tnavbar_items li{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  ul.tnavbar_items>li:nth-child(1):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(2):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(3):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(4):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(5):hover .tmega_menu{
+    display: flex;
+    /* transition-duration: 3000ms;
+    transition-timing-function: ease-in;    */
+  }
+  ul.tnavbar_items>li:nth-child(6):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(7):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(8):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(9):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(10):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(11):hover .tmega_menu{
+    display: flex;
+  }
+  ul.tnavbar_items>li:nth-child(12):hover .tmega_menu{
+    display: flex; 
+  }
+  ul.tnavbar_items>li:nth-child(13):hover .tmega_menu{
+    display: flex; 
+  }
+  ul.tnavbar_items>li:nth-child(14):hover .tmega_menu{
+    display: flex; 
+  }
+  ul.tnavbar_items>li:last-of-type{
+      margin-left: 15px;
+      /* border: none;  */
+   }
+  #t_brand{
+    position: absolute;
+    left: 50px;
+  }
+  #t_SS{
+    left: 120px;
+  }
+  #t_BB{
+    left: 50px;
+  }
+  #t_SC{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #t_Mup{
+    left: 100px;
+  }
+  #t_HC{
+    left: 350px;
+  }
+  #t_B_B{
+    left: 300px;
+  }
+  #t_T_D{
+    left: 600px;
+  }
+  #t_G_S{
+    left: 810px;
+  }
+  #t_offer{
+    left: 750px;
+  }
+  #t_new{
+     left: 1050px;
+  }
+  #t_skin{
+     left: 200px;
+  }
+
+
+/* NAVBAR STYLING ENDS */
+
 /* STYLING 1 STARTS */
 
 .t_heading{
@@ -5,7 +170,7 @@
     margin-top: 20px;
     text-align: center;
 }
-h2{
+.t_heading h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:lighter;
 }
@@ -19,30 +184,6 @@ h2{
  /* STYLING 1 ENDS */
 /* ------------------------------------------------------- */
 
-
-#slider-text{
-    padding-top: 40px;
-    display: block;
-  }
-  #slider-text .col-md-6{
-    overflow: hidden;
-  }
-  
-  #slider-text h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin: 30px auto;
-    padding-left: 40px;
-  }
-  #slider-text h2::after{
-    border-top: 2px solid #c7c7c7;
-    content: "";
-    position: absolute;
-    bottom: 35px;
-    width: 100%;
-    }
   .item button{
    width: 160px;
    margin-top:40px ;
@@ -454,14 +595,14 @@ a{
     overflow: hidden;
   }
   
-  .slider {
+  .tslider {
     height: 100%;
     display: flex;
     width: 500%;
     transition: all 0.3s;
   }
   
-  .slider section {
+  .tslider section {
     flex-basis: 100%;
   }
   
@@ -486,7 +627,7 @@ a{
     cursor: pointer;
   }
   
-  ul {
+  #t_UL {
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -495,7 +636,7 @@ a{
     display: flex;
   }
   
-  li {
+  #t_UL li {
     width: 15px;
     height: 15px;
     border: 1px solid #333;
@@ -505,7 +646,7 @@ a{
     cursor: pointer;
   }
   
-  .selected {
+  .tselected {
     background-color: transparent;
   }
 

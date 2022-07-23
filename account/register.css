@@ -1,0 +1,153 @@
+*{
+    background-color:#f2f2f2;
+    margin: 0px;
+    padding: 0px;
+    font-family:"lato regular",Helvetica,Arial,sans-serif;
+      
+}
+#navbar-2{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+img{
+    width: 220px;
+    height: 100px;
+    margin-left: 35px;
+    margin-top: 10px;
+    background: transparent;
+    
+}
+#register-data{
+    /* height: 600px; */
+    width: 49%;
+    margin: auto;
+    background-color: white;
+    margin-top: 55px;
+    line-height: 80px;
+}
+#fb-google{
+    display: flex;
+    width: 100%;
+    background: transparent;
+    margin-top: -30px; 
+}
+#fb-google div:nth-child(1):hover {
+    background-color: #f2f2f2;
+}
+#fb-google div:nth-child(2):hover {
+    background-color: #f2f2f2;
+}
+span{
+    /* width: 100px; */
+    height: 50px;
+    margin-bottom: 40px;
+    background: transparent;
+    margin-right: 100px;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
+    margin-top: 10px;
+}
+#fb-google>div:nth-child(1) {
+    border: 1px solid rgb(104, 103, 103);
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px; 
+    height: 45px;
+    margin-left: 40px;
+    background-color: white;
+   
+}
+#fb-google>div:nth-child(2){
+    border: 1px solid rgb(104, 103, 103);
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px; 
+    height: 45px;
+    margin-right: 30px;
+    margin-left: 25px;
+    background-color: white;
+}
+
+#fb-google img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 70px;
+    background: transparent;
+}
+
+h2{
+    /* margin-top: 100px; */
+    background: transparent;
+    margin: 35px;
+    font-family: Poly, sans-serif;
+    font-size: 24px;
+}
+h2:nth-child(1){
+    color: rgb(77, 76, 76);
+    font-weight: lighter;
+    font-family:  sans-serif;
+}
+h2:nth-child(2){
+    font-weight:bold;
+    color: rgb(67, 67, 67);
+    font-size: 22px;
+}
+hr+h2{
+    font-weight:bold;
+    color: rgb(67, 67, 67);
+    font-size: 22px;
+}
+hr{
+    margin-top: 40px;
+    margin-left: 35px;
+    margin-right: 30px;
+}
+form{
+    background: transparent;
+    line-height: 50px;
+    margin-top: -45px;
+}
+input{
+    width: 90%;
+    height: 50px;
+    margin-left: 35px;
+    background: transparent;
+    border: 0.25px solid rgb(86, 86, 86);
+    border-radius: 5px;
+}
+label{
+    margin-left: 35px;
+    background: transparent;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 14px;
+}
+p{
+    margin-left: 35px;
+    background: transparent;
+}
+form > input:nth-child(8){
+    background-color: black;
+    color: white;
+    
+}
+#submit{
+    background-color: black;
+    color: white;
+}
+#checkbox{
+    margin-left: -250px;
+    height: 20px;
+}
+#form > p{
+    font-size: 14px;
+    font-family:"lato regular",Helvetica,Arial,sans-serif;
+    color: rgb(47, 47, 47);
+}
+

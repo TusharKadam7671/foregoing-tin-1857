@@ -5,85 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      .menu-button {
-        background-color: transparent;
-        color: gray;
-        padding: 16px;
-        font-size: 16px;
-       border: 0px;
-        margin-top: 50px;
-      }
-      .menu-button:hover{
-        background-color: #f2f2f2;
-      }
-      .right-menu{
-        position: relative;
-        display: inline-block;
-        /* float: right; */
-        margin-right: 120px;
-      }
-      .dropdown-menu{
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px (0,0,0,0.2);
-        z-index: 1;
-        width: 20px;
-      }
-     
-      .dropdown-menu a{
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        
-      }
-   
-      .dropdown-menu a:hover{
-        background-color: #000;
-        color: #fff;
-      }
-      .dropdown-menu{
-        width: 100px;
-        height: 500px;
-      }
-      .right-menu:hover  .dropdown-menu{
-        display: block;
-      }
-      .right-menu:hover  .dropdown-menu{
-        background-color: transparent;
-      }
-      img{
-        width: 40px;
-        height: 20px;
-        
-      }
-    
-    
-
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   
-<div class="right-menu" >
-
-  
-<button class="menu-button" >
-  <img src="https://img1.pnghut.com/21/23/15/vVJVENtiMw/logo-user-profile-emoticon-hamburger-button-avatar.jpg" alt="">
-  Account</button>
-
-<div class="dropdown-menu" >
-    <a href="#">LOG IN</a>
-    <a href="#">REGISTER</a>
-    <a href="#">My Favorites</a>
-    <a href="#">Your Orders</a>
-    <a href="#">Your Subscriptions</a>
-    <a href="#">Your Referrals</a>
-  
+<div class="navbar">
+  <a href="index.html"><img src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg" alt=""></a> 
+  <input id="search" type="search" placeholder="search for a product or brand..." >
+<div class="account-box">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Font_Awesome_5_regular_user.svg/1792px-Font_Awesome_5_regular_user.svg.png" alt="user-logo">
+  <div class="account">Account</div>
+    <div class="dropdown-menu" >
+      <div class="box-1" >
+       <div><a href="login.html">LOG IN</a></div>
+       <div><a href="register.html">REGISTER</a></div>
+      </div> 
+    <div class="box-2" >
+      <div><a href="#">My Favorites</a></div>
+      <div><a href="#">Your Orders</a></div>
+      <div><a href="#">Your Subscriptions</a></div>
+      <div><a href="#">Your Referrals</a></div>
+  </div>
 </div>
 </div>
-    </div>
+  <div id="cart">
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/unicons/cart-38.png" alt="">
+      <div><a href="#">Cart</a></div>
+  </div>
+</div>
 </body>
 </html>

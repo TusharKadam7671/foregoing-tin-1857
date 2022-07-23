@@ -582,7 +582,15 @@ let sort = ()=>{
 }
 
 let storeData = (data)=>{
-
+  if(data.quantity==null)
+  {
+    data.quantity=1
+  }
+  else
+  {
+    data.quantity++
+  }
+  console.log(data)
  localStorage.setItem("cart_data",JSON.stringify(data))
 }
 

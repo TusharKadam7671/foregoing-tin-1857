@@ -1,0 +1,213 @@
+/* STYLING 1 STARTS */
+
+.t_heading{
+    border: 1px solid red;
+    margin-top: 20px;
+    text-align: center;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:lighter;
+}
+.t_slider{
+    border: 1px solid magenta;
+    width: 96vw;
+    height: 70vh;
+    margin: auto;
+}
+
+ /* STYLING 1 ENDS */
+
+
+/* STYLING 2 STARTS */
+
+
+.t_h_para{
+    border: 1px solid blue;
+    margin: auto;
+    text-align: center;
+  
+}
+.t_h_para p{
+    font-size: small;
+}
+.t_cosmetics{
+    border: 1px solid rgb(2, 129, 179);
+    width: 96vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.t_cosmetics_1{
+    border: 1px solid rgb(17, 233, 25);
+    width: 46vw;
+    height: 60vh;
+}
+.t_cosmetics_2{
+    border: 1px solid rgb(17, 233, 25);
+    width: 46vw;
+    height: 60vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* STYLING 2 ENDS */
+
+
+/* STYLING 3 STARTS */
+
+
+.t_SBC_head{
+    /* border: 1px solid greenyellow; */
+    margin: auto;
+    text-align: center;
+}
+.t_SBC_btn{
+    /* border:1px solid orangered; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  
+}
+.t_SBC_btn1{
+   margin: auto;
+  
+}
+.t_SBC_btn1 button{
+   padding: 10px;
+   border: 1.5px solid black;
+   width: 200px;
+   background-color: white;
+   cursor: pointer;
+}
+.t_SBC_btn1 button:hover{
+    background-color: #CCCC;
+}
+.t_shopping_div{
+    /* border:1px solid orange; */
+    display:flex;
+    height: 58vh;
+    width: 85vw;
+    margin: auto;
+     margin-top: 30px;
+    /*margin-left: auto; */
+    justify-content: space-evenly;
+
+}
+.t_shopping{
+    /* border:1px solid rgb(0, 242, 255); */
+    width: 30%;
+    cursor: pointer;
+}
+.t_shopping img{
+    width: 100%;
+}
+.t_shopping h4{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -1px;
+}
+.t_shopping p{
+    font-size: small;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* STYLING 3 ENDS */
+
+
+/* STYLING 4 STARTS */
+
+
+.t_img{
+    text-align: center;
+}
+.t_F_B{
+    text-align: center;
+}
+.t_F_B1{
+    /* border:1px solid orange; */
+    display:flex;
+    height: 40vh;
+    width: 85vw;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.t_brands{
+    /* border:1px solid rgb(0, 242, 255); */
+    width: 15%;
+    cursor: pointer;
+}
+.t_brands img{
+    width: 100%;
+}
+
+/* STYLING 4 ENDS */
+
+/* STYLING 5 STARTS */
+
+
+.t_video{
+    /* border:1px solid green; */
+    display:block;
+    height: 90vh;
+    width: 85vw;
+    margin: auto;
+}
+
+/* STYLING 5 ENDS */
+
+/* STYLING 6 STARTS */
+
+
+.t_hardcode{
+    /* border: 1px solid purple; */
+    text-align: center;
+}
+.t_hardcode_1{
+    /* border: 1px solid purple; */
+    text-align: center;
+    font-size: small;
+    width: 85vw;
+    margin: auto;
+}
+.t_lodge{
+    /* border: 1px solid chocolate; */
+    width: 85vw;
+    margin: auto;
+    margin-top: 40px;
+}
+.t_lodge img{
+    width: 100%;
+    cursor: pointer;
+
+}
+
+/* STYLING 6 ENDS */
+
+
+/* STYLING 7 STARTS */
+
+.t_blog1{
+    text-align: center;
+}
+.t_blog_slider{
+     border:1px solid orange;
+     display:flex;
+     height: 58vh;
+     width: 85vw;
+     margin: auto;
+      margin-top: 30px;
+}
+
+/* STYLING 7 ENDS */
+
+
+

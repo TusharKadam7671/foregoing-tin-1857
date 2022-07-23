@@ -133,6 +133,10 @@ hr{
     width: 250px;
     padding: 7px 0px 7px 0px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+#top>div>img:hover{
+    cursor: pointer;
 }
 
 

@@ -1,0 +1,55 @@
+#footer{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+#footer>div{
+    border: 1px solid teal;
+    width: 50%;
+}
+/* #footer>div>div>:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+} */
+#footer>div>div>div>p:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+}
+
+#buybutton{
+    width: 30%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#socialhandle{
+    display: flex;
+    gap: 20px;
+}
+#socialhandle>img{
+    width: 6%;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#lower{
+    display: flex;
+}
+
+#companydetails{
+    display: flex;
+    gap: 20px;
+}
+#companydetails>div{
+    width: 32%;
+    border-top: 1px solid rgb(173,174,182);
+}
+#hover>p:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+}
+#socialhandle>img:hover{
+    cursor: pointer;
+    
+}

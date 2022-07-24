@@ -1,0 +1,141 @@
+#container{
+    display: flex;
+    width: 100%;
+   
+}
+/* #container>div{
+
+    border: 1px solid teal;
+} */
+#container img{
+
+   width: 100%;
+   
+
+}
+#container>div:first-child{
+    width: 25%;
+}
+#container>div:last-child{
+    width: 70%;
+    margin-left: 20px;
+}
+#product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+}
+#product {
+    text-align: center;
+}
+#product>div>img{
+    width: 100%;
+}
+#product>div>p{
+    height: 25px;
+}
+/* #product>div{
+    border: 1px solid tan;
+    
+} */
+
+
+.buybutton{
+    width: 95%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* margin-bottom: 5px; */
+    
+}
+hr{
+    border: 0.5px solid rgb(173,174,182);
+}
+#top{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.filter{
+    /* border: 1px solid rgb(173,174,182); */
+    height: 100px;
+    overflow: auto;
+    margin-left: 20px;
+}
+.margin{
+    margin-left: 20px;
+}
+.Pageinstruction{
+    color: rgb(173,174,182);
+}
+#top img{
+    width: 100%;
+}
+#footer{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+#footer>div{
+    border: 1px solid teal;
+    width: 50%;
+}
+/* #footer>div>div>:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+} */
+#footer>div>div>div>p:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+}
+
+#buybutton{
+    width: 30%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#socialhandle{
+    display: flex;
+    gap: 20px;
+}
+#socialhandle>img{
+    width: 6%;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#lower{
+    display: flex;
+}
+
+#companydetails{
+    display: flex;
+    gap: 20px;
+}
+#companydetails>div{
+    width: 32%;
+    border-top: 1px solid rgb(173,174,182);
+}
+#hover>p:hover{
+    background-color:rgb(173,174,182) ;
+    cursor: pointer;
+}
+#socialhandle>img:hover{
+    cursor: pointer;
+}
+#sort{
+    width: 250px;
+    padding: 7px 0px 7px 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#top>div>img:hover{
+    cursor: pointer;
+    
+}

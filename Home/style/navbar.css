@@ -44,6 +44,10 @@ ul.navbar_items li:hover{
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
+
+
+
+
 .navbar_item:hover .mega_menu{
   position: absolute;
   opacity: 1;
@@ -111,6 +115,10 @@ ul.navbar_items>li:last-of-type{
     margin-left: 15px;
     /* border: none;  */
  }
+
+
+
+
 #t_brand{
   position: absolute;
   left: 50px;
@@ -148,4 +156,8 @@ ul.navbar_items>li:last-of-type{
 }
 #t_skin{
    left: 200px;
+
 }
+
+}
+

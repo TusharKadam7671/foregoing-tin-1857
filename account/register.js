@@ -11,7 +11,7 @@
             email: document.getElementById("email").value,
             password: document.getElementById("password").value,
         }
-     alert("thanku for regestration")
+     alert("Registration completed successfully");
         userDataArr.push(dataObj)
 
         localStorage.setItem("userData", JSON.stringify(userDataArr))

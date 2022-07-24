@@ -27,7 +27,7 @@ function myFunction(event) {
         var token = Math.random();
        
         localStorage.setItem("token", token);
-        window.location.href = "index.html"
+        window.location.href ="../index.html"
 
     }
     else {

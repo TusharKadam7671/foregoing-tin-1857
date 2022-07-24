@@ -1,8 +1,7 @@
 *{
-    font-family:"lato regular",Helvetica,Arial,sans-serif;
-    margin: 0px;
-    padding: 0px;
-  }
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
   .navbar{
     /* border: 1px solid black; */
     height: 100px;
@@ -27,7 +26,7 @@
   #cart{
     display: flex;
     float: right;
-    margin-right: -220px;
+    /* margin-right: -220px; */
     margin-top: 37px;
   }
   #cart img{
@@ -55,7 +54,7 @@
   {
     margin-top: 12px;
   }
-  .dropdown-menu{
+  /* .dropdown-menu{
     display: none;
     position: fixed;
     left: 870px;
@@ -180,4 +179,4 @@ background-color:rgb(74, 73, 73);
 }
 .box-1 > div:nth-child(2):hover{
 background-color:#e0e0e0;
-}
+} */

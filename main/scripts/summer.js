@@ -1,5 +1,7 @@
 // import getData from "./footer.js"
 // // document.getElementById("footer").innerHTML =footer()
+
+var cart_data=JSON.parse(localStorage.getItem("cart_data")) || [];
 let data = [
     {
       id: 1,
@@ -152,29 +154,29 @@ let data = [
   function append(data){
     let container = document.getElementById("product")
     container.innerHTML = null;
-    data.forEach(({image,name,banner_text,ratings_reviews,price},i,arr) => {
+    data.forEach((el) => {
         let images = document.createElement("img")
-        images.src=image
+        images.src=el.image
         let names = document.createElement("p")
-        names.innerText=name;
+        names.innerText=el.name;
         let banners = document.createElement("p")
-        if(banner_text!="")
+        if(el.banner_text!="")
         {
-        banners.innerText=banner_text
+        banners.innerText=el.banner_text
         banners.style.border="1px solid rgb(204,204,204)"
         banners.style.width="90%"
         banners.style.margin="auto"
         }
         banners.setAttribute("class","banners")
         let prices = document.createElement("p")
-        prices.innerText=`$${price}`
+        prices.innerText=`$${el.price}`
         let box = document.createElement("div")
         box.setAttribute("class","cartdiv");
         let button=document.createElement("button")
         button.setAttribute("class","buybutton")
         button.innerText="QUICK BUY"
         button.addEventListener("click",()=>{
-          storeData(arr[i])
+          storeData(el)
         })
         box.append(images,names,banners,prices,button)
         container.append(box)
@@ -238,12 +240,10 @@ let data = [
     {
       data.quantity=1
     }
-    else
-    {
-      data.quantity++
-    }
+   
     console.log(data)
-   localStorage.setItem("cart_data",JSON.stringify(data))
+    cart_data.push(data);
+   localStorage.setItem("cart_data",JSON.stringify(cart_data))
   }
   
   let filtering=()=>{

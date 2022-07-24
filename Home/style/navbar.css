@@ -1,7 +1,12 @@
+#fix{
+  height: 0.1px;
+  width: 100%;
+}
 .navbar{
   /* display: flex; */
   width: 100%;
   margin: auto;
+  margin-top: -15px;
 }
 .navbar_items a{
   font-size: 14px;
@@ -159,5 +164,5 @@ ul.navbar_items>li:last-of-type{
 
 }
 
-}
+
 

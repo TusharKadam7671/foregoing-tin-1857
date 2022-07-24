@@ -1,0 +1,123 @@
+
+       /* footer............................................................................................................ */
+
+       #container1{
+        display: flex;
+        height: 400px;
+        width: 100%;
+       margin-top: 2%;
+        /* border: 1px solid black; */
+    }
+    .box11{
+        
+        height: 500px;
+        width: 40%;
+        margin-left: 5%;
+        
+    }
+    
+    #submit{
+        padding: 1%;
+        background-color: black;
+        color: white;
+        width: 180px;
+        height: 40px;
+        margin-bottom: 50px;
+        margin-left: 0%;
+    }
+    /* p{
+        margin: 4%;
+        color: black;
+    } */
+    /* .box1>div{
+        border: 1px solid greenyellow;
+        height: 300px;
+        width: 0%;
+        margin-top: 26%;
+    } */
+    .box2{
+        /* border: 1px solid blue; */
+        /* display: flex; */
+        height: 50px;
+        width:  50%;
+      /* margin-top: 1%; */
+    }
+    .box21{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+       margin-left: 90px;
+       margin-top: 38px;
+       width: 35%;
+          
+    }
+    .box21>div{
+        
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        height: 30px;
+        width: 60%;
+        /* margin-bottom:10% ; */
+        font-size: 25px;
+        background-color: darkgrey;
+        text-align: center;
+       
+       /* margin-top: 7%; */
+    }
+    .box22{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* border: 2px solid teal; */
+        height: 330px;
+        margin-top: 40px;
+    }
+    .box22>div>hr{
+        /* border: 2px solid brown; */
+        width: 60%;
+        margin-right: 90px;
+    }
+    .box22>div>a>p{
+        margin: 9%;
+        
+        color: black;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    .box22>div>p{
+      margin-left: 9%;
+    }
+    #lastcontainer{
+        display: flex;
+        /* border: 2px solid red; */
+        height: 120px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #lastcontainer>div{
+        /* border: 2px solid green; */
+        width: 50%;
+        
+    }
+    .pay{
+      display: grid;
+      grid-template-columns: repeat(9,1fr);
+      grid-template-rows: repeat(2,100px);
+      
+    }
+    .pay>div{
+    /* border: 2px solid black; */
+    font-size: 50px;
+    margin-top: 30px;
+    padding-top: 12%;
+    }
+    #last{
+      display: flex;
+      width: 90%;
+      margin: auto;
+    }
+    #accept{
+      padding: 9px;
+      width: 100px;
+    }

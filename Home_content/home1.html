@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+      <!-- WIDGET START -->
+
+    <div id="t_big_box">
+        <div class="to_place_in_middle">
+            <div class="s_box1">
+                <a href="#">
+                  <img src="https://icon-library.com/images/delivery-truck-icon/delivery-truck-icon-1.jpg" alt="Error" class = "delivery">
+                  <p>FREE US Shipping Over $50</p>
+                </a>
+            </div>
+            <div class="s_box2">
+                <a href="#">
+                    <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/customer-website-3564522-2980307.png" alt="Error" class = "delivery">
+                    <p>New Customers Save 15% With Code WELCOME15</p>
+                  </a>
+            </div>
+            <div class="s_box3">
+                <a href="#">
+                    <img src="https://cdn.iconscout.com/icon/free/png-128/redeem-1779510-1513205.png" alt="Error" class = "delivery">
+                    <p>Redeem Dermstore Rewards</p>
+                  </a>
+            </div>
+            <div class="s_box4">
+                <a href="#">
+                    <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/responsive-design-2955743-2453822.png" alt="Error" class = "delivery">
+                    <p>Download Our App</p>
+                  </a>
+            </div>
+            <div class="s_box5">
+                <a href="#">
+                    <img src="https://cdn.iconscout.com/icon/free/png-128/tick-54-450679.png" alt="Error" class = "delivery">
+                    <p>Refer a Friend, Get $15</p>
+                  </a>
+            </div>
+        </div>
+           
+    </div>
+
+     <!-- WIDGET END -->
+
+    <!-- STRIPBANNER START  -->
+
+    <div class="stripBanner">
+        <a href="#" class="stripBanner_text">
+            Save 20% on all RevitaLash brow, lash and hair enhancers. Plus, receive a $15 gift when you spend $125+ on the brand. Ends 7/24. SHOP NOW </a>
+    </div>
+
+    <!-- STRIPBANNER END -->
+
+    <!-- RESPONSIVE SLIDER-1 STARTS -->
+  
+    <div class="t_container">
+                 <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      
+                        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/18/original-0629-STDCRE-38074-DS-CG-July-Priority-Batch-Shot17-HomePage_1920x700-064218.jpg" alt="Error">
+                        <h1>Save With Auto-Replenishment</h1>
+                        <p>Never run out of your favorites again:Save up to 15% when you schedule your must-haves.</p>
+                        <button>SHOP NOW</button>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/28/original-0704-STDCRE-38075-DS-AM-July-2022-Photography-Remaining-Btching-1920x700-050028.jpg" alt="Error">
+                      <h1>Save With Auto-Replenishment</h1>
+                      <p>Never run out of your favorites again:Save up to 15% when you schedule your must-haves.</p>
+                      <button>SHOP NOW</button>
+                    
+                    </div>
+                    <div class="swiper-slide">
+                     
+                      <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/44/original-0629-STDCRE-38074-DS-CG-July-Priority-Batch-Shot02-HomePage_1920x700-050944.jpg" alt="Error">
+                      <h1>Save With Auto-Replenishment</h1>
+                      <p>Never run out of your favorites again:Save up to 15% when you schedule your must-haves.</p>
+                      <button>SHOP NOW</button>
+                    </div>
+                    <div class="swiper-slide"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/39/original-Summer_Shop_1920x700-041339.png" alt="Error">
+                    <h1>Save With Auto-Replenishment</h1>
+                      <p>Never run out of your favorites again:Save up to 15% when you schedule your must-haves.</p>
+                      <button>SHOP NOW</button>
+                    </div>
+                    <div class="swiper-slide"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/51/original-BoD_SCF_Kit_1920x700_%283%29-091051.png" alt="Error">
+                      <h1>Save With Auto-Replenishment</h1>
+                      <p>Never run out of your favorites again:Save up to 15% when you schedule your must-haves.</p>
+                      <button>SHOP NOW</button>
+                  
+                    </div>
+
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+        
+                </div>
+    </div>
+    
+                 <!-- RESPONSIVE SLIDER-1 ENDS -->
+     
+</body>
+</html>
+   <!-- RESPONSIVE SLIDER-1 START -->
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+        delay:4000,
+        disableOnInteraction:false
+    },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    // position: 'absolute',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+//  RESPONSIVE SLIDER-1 ENDS
+</script>

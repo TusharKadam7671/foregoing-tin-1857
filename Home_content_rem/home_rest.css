@@ -233,13 +233,13 @@ margin: auto;
   align-items: center;
   justify-content: center;
 }
-a{
+#t_big_box a{
   display: flex;
   text-decoration: none;
   color: black;
   gap: 5px;
 }
-p{
+#t_big_box p{
   font-size: 12px;
  
 }
@@ -288,6 +288,8 @@ p{
 /* ----------SLIDER STYLING STARTS----------- */
 
 .t_container{
+  position: absolute;
+  top: 150px;
   /* border: 1px solid red; */
   width: 100vw;
   /* background: white; */
@@ -295,7 +297,7 @@ p{
   align-items: center;
   justify-content: center;
   height: 80vh;
-
+margin-bottom: 200px;
 }
 .swiper{
   position: relative;
@@ -796,7 +798,7 @@ a{
   }
   
   .carsoul {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 500px;
     position: relative;
     overflow: hidden;

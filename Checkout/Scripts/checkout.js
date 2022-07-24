@@ -101,7 +101,10 @@ let append=()=>{
         });
 
         document.getElementById("item_count").innerText=count +" items";
-        document.getElementById("total_price").innerText=`$ ${total}`
+        // document.getElementById("total_price").innerText=`$ ${total}`
+        let finalprice=JSON.parse(localStorage.getItem("cart_total"));
+        document.getElementById("total_price").innerText=`$ ${finalprice}`
+
 }
 
 append();

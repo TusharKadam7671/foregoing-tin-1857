@@ -54,7 +54,7 @@
   {
     margin-top: 12px;
   }
-  .dropdown-menu{
+  /* .dropdown-menu{
     display: none;
     position: fixed;
     left: 870px;
@@ -179,4 +179,4 @@ background-color:rgb(74, 73, 73);
 }
 .box-1 > div:nth-child(2):hover{
 background-color:#e0e0e0;
-}
+} */

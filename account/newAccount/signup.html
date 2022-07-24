@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #f2f2f2;
+        }
+
+        /* This is for top bar */
+        #topbar {
+            height: 33px;
+            padding: 20px;
+            padding-bottom: 28px;
+            margin-top: -10px;
+            display: flex;
+            padding-left: 100px;
+            background-color: white;
+            /* fixing topbar while scrolling */
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        #imagediv {
+            width: 342px;
+            height: 48px;
+            /* border:1px solid green; */
+            padding: 2px 24px;
+            margin-left: 70px;
+            /* border: 1px solid black; */
+        }
+
+        #image {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* This is for top bar */
+        #container {
+            background-color: #f2f2f2;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            margin-top: 128px;
+
+        }
+
+        #content {
+            grid-area: 2/4/2/10;
+            width: 624px;
+            height: 1545px;
+            padding: 32px;
+            margin: auto;
+            /* border: 1px solid red; */
+            background-color: white;
+            margin-bottom: 80px;
+        }
+
+        #social {
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            margin-top: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #facebook {
+            height: 55px;
+            width: 302px;
+            color: #666666;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #fblogo {
+            height: 70%;
+            padding-right: 7px;
+
+        }
+
+        #google {
+            height: 55px;
+            width: 302px;
+            color: #666666;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #googleimg {
+            height: 50%;
+            padding-right: 8px;
+
+        }
+
+        .inputtxt {
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            color: rgb(75, 75, 75);
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            padding-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #about {
+            height: 65px;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-style: normal;
+            font-size: 25px;
+            line-height: 0px;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            color: rgb(61, 61, 61);
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 20px;
+            color: rgb(61, 61, 61);
+            line-height: 28px;
+            letter-spacing: 0px;
+        }
+
+        .input {
+            height: 43px;
+            width: 620px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding-left: 10px;
+        }
+
+        .showPassword {
+            border: 0px solid red;
+            background-color: white;
+            text-align: center;
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            color: rgb(65, 65, 65);
+        }
+
+        .passwordShow {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height: 43px;
+            width: 620px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 9px;
+        }
+
+        #optional {
+            font-weight: normal;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: black;
+        }
+
+        .inputBelowTxt {
+            margin-top: 0px;
+        }
+
+        .txtMargin0 {
+            margin-bottom: 0px;
+        }
+
+        #Referral {
+            background-color: rgb(236, 236, 236);
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 135px;
+            margin-bottom: 5px;
+        }
+
+        .ReferralInput {
+            width: 99%;
+        }
+
+        #checkboxdiv {
+            display: flex;
+            height: 35px;
+            align-items: center;
+            padding-left: 5px;
+            width: 530px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #checkboxdiv:hover {
+            background-color: rgb(211, 211, 211);
+        }
+
+        .checkboxTxt {
+            margin: auto 10px;
+        }
+
+        .password {
+            height: 41px;
+            width: 618px;
+            border: 0px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .checkboxContainer {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* hide the default checkbox */
+        .checkboxContainer input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 2px solid rgb(27, 27, 27);
+            background-color: white;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .checkboxContainer:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a black background */
+        .checkboxContainer input:checked~.checkmark {
+            background-color: rgb(27, 27, 27);
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .checkboxContainer input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .checkboxContainer .checkmark:after {
+            left: 7px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 1px 1px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .span {
+            font-weight: normal;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgb(31, 31, 31);
+            letter-spacing: -0.45px;
+        }
+
+        #continuebutton {
+            background-color: #222222;
+            color: white;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+
+        #email {
+            margin-bottom: 4px;
+        }
+
+        /* alert message  */
+        .alertDiv {
+            height: 43px;
+            width: 624px;
+            border-radius: 3px;
+            margin-top: 0px;
+            display: flex;
+            background-color: #fae8e6;
+            align-items: center;
+            display: none;
+        }
+
+        i {
+            color: #c42c21;
+            font-size: 130%;
+            padding-left: 15px;
+        }
+
+        #emailAlert1,
+        #emailAlert2,
+        #emailAlert3,
+        #nameAlert,
+        #passwordAlert1,
+        #passwordAlert2,
+        #passwordAlert3,
+        #cofirmEmail2 {
+            color: #c42c21;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+
+        #emailAlert2,
+        #passwordAlert1,
+        #emailAlert3 {
+            display: none;
+        }
+
+        #alertPassword {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        /* alert message  */
+
+        /* <----------------for laptop--------------------------------> */
+        @media only screen and (min-width:900px) and (max-width:1199px) {
+
+            /* This is for top bar */
+            #topbar {
+                height: 33px;
+                display: flex;
+                background-color: white;
+                margin: auto;
+                padding-left: 20px;
+                padding-top: 10px;
+                /* fixing topbar while scrolling */
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                /* border: 1px solid red; */
+            }
+
+            #imagediv {
+                width: 342px;
+                height: 48px;
+                margin-left: 0px;
+                /* border: 1px solid black; */
+                margin: auto;
+            }
+
+            #image {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* This is for top bar */
+            #container {
+                background-color: #f2f2f2;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                margin-top: 128px;
+
+            }
+
+            #content {
+                grid-area: 2/3/2/10;
+                width: 100%;
+                height: 1545px;
+                padding: 32px;
+                margin: auto;
+                /* border: 1px solid red; */
+                background-color: white;
+                margin-bottom: 80px;
+            }
+
+            #social {
+                height: 90px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(212, 212, 212);
+                margin-top: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            #facebook {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #fblogo {
+                height: 70%;
+                padding-right: 7px;
+
+            }
+
+            #google {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #googleimg {
+                height: 50%;
+                padding-right: 8px;
+
+            }
+
+            .inputtxt {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                color: rgb(75, 75, 75);
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                padding-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            #about {
+                height: 65px;
+            }
+
+            h1 {
+                font-weight: normal;
+                font-style: normal;
+                font-size: 25px;
+                line-height: 0px;
+                letter-spacing: -0.5px;
+                margin-bottom: 16px;
+                color: rgb(61, 61, 61);
+                padding-bottom: 16px;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 20px;
+                color: rgb(61, 61, 61);
+                line-height: 28px;
+                letter-spacing: 0px;
+            }
+
+            .input {
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding-left: 10px;
+            }
+
+            .showPassword {
+                border: 0px solid red;
+                background-color: white;
+                text-align: center;
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: rgb(65, 65, 65);
+            }
+
+            .passwordShow {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 9px;
+            }
+
+            #optional {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: black;
+            }
+
+            .inputBelowTxt {
+                margin-top: 0px;
+            }
+
+            .txtMargin0 {
+                margin-bottom: 0px;
+            }
+
+            #Referral {
+                background-color: rgb(236, 236, 236);
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                height: 135px;
+                margin-bottom: 5px;
+            }
+
+            .ReferralInput {
+                width: 99%;
+            }
+
+            #checkboxdiv {
+                display: flex;
+                height: 35px;
+                align-items: center;
+                padding-left: 5px;
+                width: 530px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #checkboxdiv:hover {
+                background-color: rgb(211, 211, 211);
+            }
+
+            .checkboxTxt {
+                margin: auto 10px;
+            }
+
+            .password {
+                height: 41px;
+                width: 97%;
+                border: 0px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .checkboxContainer {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            /* hide the default checkbox */
+            .checkboxContainer input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border: 2px solid rgb(27, 27, 27);
+                background-color: white;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .checkboxContainer:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a black background */
+            .checkboxContainer input:checked~.checkmark {
+                background-color: rgb(27, 27, 27);
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .checkboxContainer input:checked~.checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkboxContainer .checkmark:after {
+                left: 7px;
+                top: 2px;
+                width: 6px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .span {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgb(31, 31, 31);
+                letter-spacing: -0.45px;
+            }
+
+            #continuebutton {
+                background-color: #222222;
+                color: white;
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+
+            #email {
+                margin-bottom: 4px;
+            }
+
+            /* alert message  */
+            .alertDiv {
+                height: 43px;
+                width: 100%;
+                border-radius: 3px;
+                margin-top: 0px;
+                display: flex;
+                background-color: #fae8e6;
+                align-items: center;
+                display: none;
+            }
+
+            i {
+                color: #c42c21;
+                font-size: 130%;
+                padding-left: 15px;
+            }
+
+            #emailAlert1,
+            #emailAlert2,
+            #emailAlert3,
+            #nameAlert,
+            #passwordAlert1,
+            #passwordAlert2,
+            #passwordAlert3,
+            #cofirmEmail2 {
+                color: #c42c21;
+                margin: 0px;
+                padding: 0px;
+                padding-left: 5px;
+            }
+
+            #emailAlert2,
+            #passwordAlert1,
+            #emailAlert3 {
+                display: none;
+            }
+
+            #alertPassword {
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            /* alert message  */
+
+        }
+
+        /* <-----------------for tablet-------------------> */
+        @media only screen and (min-width:670px) and (max-width:899px) {
+
+            /* This is for top bar */
+            #topbar {
+                height: 33px;
+                display: flex;
+                background-color: white;
+                margin: auto;
+                padding-left: 20px;
+                padding-top: 10px;
+                /* fixing topbar while scrolling */
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                /* border: 1px solid red; */
+            }
+
+            #imagediv {
+                width: 342px;
+                height: 48px;
+                margin-left: 0px;
+                /* border: 1px solid black; */
+                margin: auto;
+            }
+
+            #image {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* This is for top bar */
+            #container {
+                background-color: #f2f2f2;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                margin-top: 128px;
+
+            }
+
+            #content {
+                grid-area: 2/2/2/11;
+                width: 94%;
+                height: 1545px;
+                padding: 32px;
+                margin: auto;
+                /* border: 1px solid red; */
+                background-color: white;
+                margin-bottom: 80px;
+            }
+
+            #social {
+                height: 90px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(212, 212, 212);
+                margin-top: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            #facebook {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #fblogo {
+                height: 70%;
+                padding-right: 7px;
+
+            }
+
+            #google {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #googleimg {
+                height: 50%;
+                padding-right: 8px;
+
+            }
+
+            .inputtxt {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                color: rgb(75, 75, 75);
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                padding-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            #about {
+                height: 65px;
+            }
+
+            h1 {
+                font-weight: normal;
+                font-style: normal;
+                font-size: 25px;
+                line-height: 0px;
+                letter-spacing: -0.5px;
+                margin-bottom: 16px;
+                color: rgb(61, 61, 61);
+                padding-bottom: 16px;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 20px;
+                color: rgb(61, 61, 61);
+                line-height: 28px;
+                letter-spacing: 0px;
+            }
+
+            .input {
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding-left: 10px;
+            }
+
+            .showPassword {
+                border: 0px solid red;
+                background-color: white;
+                text-align: center;
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: rgb(65, 65, 65);
+            }
+
+            .passwordShow {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 9px;
+            }
+
+            #optional {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: black;
+            }
+
+            .inputBelowTxt {
+                margin-top: 0px;
+            }
+
+            .txtMargin0 {
+                margin-bottom: 0px;
+            }
+
+            #Referral {
+                background-color: rgb(236, 236, 236);
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                height: 135px;
+                margin-bottom: 5px;
+            }
+
+            .ReferralInput {
+                width: 99%;
+            }
+
+            #checkboxdiv {
+                display: flex;
+                height: 35px;
+                align-items: center;
+                padding-left: 5px;
+                width: 530px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #checkboxdiv:hover {
+                background-color: rgb(211, 211, 211);
+            }
+
+            .checkboxTxt {
+                margin: auto 10px;
+            }
+
+            .password {
+                height: 41px;
+                width: 97%;
+                border: 0px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .checkboxContainer {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            /* hide the default checkbox */
+            .checkboxContainer input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border: 2px solid rgb(27, 27, 27);
+                background-color: white;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .checkboxContainer:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a black background */
+            .checkboxContainer input:checked~.checkmark {
+                background-color: rgb(27, 27, 27);
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .checkboxContainer input:checked~.checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkboxContainer .checkmark:after {
+                left: 7px;
+                top: 2px;
+                width: 6px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .span {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgb(31, 31, 31);
+                letter-spacing: -0.45px;
+            }
+
+            #continuebutton {
+                background-color: #222222;
+                color: white;
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+
+            #email {
+                margin-bottom: 4px;
+            }
+
+            /* alert message  */
+            .alertDiv {
+                height: 43px;
+                width: 100%;
+                border-radius: 3px;
+                margin-top: 0px;
+                display: flex;
+                background-color: #fae8e6;
+                align-items: center;
+                display: none;
+            }
+
+            i {
+                color: #c42c21;
+                font-size: 130%;
+                padding-left: 15px;
+            }
+
+            #emailAlert1,
+            #emailAlert2,
+            #emailAlert3,
+            #nameAlert,
+            #passwordAlert1,
+            #passwordAlert2,
+            #passwordAlert3,
+            #cofirmEmail2 {
+                color: #c42c21;
+                margin: 0px;
+                padding: 0px;
+                padding-left: 5px;
+            }
+
+            #emailAlert2,
+            #passwordAlert1,
+            #emailAlert3 {
+                display: none;
+            }
+
+            #alertPassword {
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            /* alert message  */
+
+        }
+
+        /* <------------------for mobile---------------------> */
+        @media only screen and (min-width:0px) and (max-width:669px) {
+
+            /* This is for top bar */
+            #topbar {
+                height: 33px;
+                display: flex;
+                background-color: white;
+                margin: auto;
+                padding-left: 20px;
+                padding-top: 10px;
+                /* fixing topbar while scrolling */
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                /* border: 1px solid red; */
+            }
+
+            #imagediv {
+                width: 342px;
+                height: 48px;
+                margin-left: 0px;
+                /* border: 1px solid black; */
+                margin: auto;
+            }
+
+            #image {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* This is for top bar */
+            #container {
+                background-color: #f2f2f2;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                margin-top: 128px;
+
+            }
+
+            #content {
+                grid-area: 2/1/2/112;
+                width: 90%;
+                height: 1545px;
+                padding: 32px;
+                margin: auto;
+                /* border: 1px solid red; */
+                background-color: white;
+                margin-bottom: 80px;
+            }
+
+            #social {
+                height: 90px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(212, 212, 212);
+                margin-top: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            #facebook {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #fblogo {
+                height: 70%;
+                padding-right: 7px;
+
+            }
+
+            #google {
+                height: 55px;
+                width: 48%;
+                color: #666666;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #googleimg {
+                height: 50%;
+                padding-right: 8px;
+
+            }
+
+            .inputtxt {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                color: rgb(75, 75, 75);
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                padding-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            #about {
+                height: 65px;
+            }
+
+            h1 {
+                font-weight: normal;
+                font-style: normal;
+                font-size: 25px;
+                line-height: 0px;
+                letter-spacing: -0.5px;
+                margin-bottom: 16px;
+                color: rgb(61, 61, 61);
+                padding-bottom: 16px;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 20px;
+                color: rgb(61, 61, 61);
+                line-height: 28px;
+                letter-spacing: 0px;
+            }
+
+            .input {
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding-left: 10px;
+            }
+
+            .showPassword {
+                border: 0px solid red;
+                background-color: white;
+                text-align: center;
+                font-weight: 700;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: rgb(65, 65, 65);
+            }
+
+            .passwordShow {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                height: 43px;
+                width: 98%;
+                border: 1px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 9px;
+            }
+
+            #optional {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: black;
+            }
+
+            .inputBelowTxt {
+                margin-top: 0px;
+            }
+
+            .txtMargin0 {
+                margin-bottom: 0px;
+            }
+
+            #Referral {
+                background-color: rgb(236, 236, 236);
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                height: 135px;
+                margin-bottom: 5px;
+            }
+
+            .ReferralInput {
+                width: 99%;
+            }
+
+            #checkboxdiv {
+                display: flex;
+                height: 35px;
+                align-items: center;
+                padding-left: 5px;
+                width: 530px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #checkboxdiv:hover {
+                background-color: rgb(211, 211, 211);
+            }
+
+            .checkboxTxt {
+                margin: auto 10px;
+            }
+
+            #check_txt {
+                width: 60%;
+            }
+
+            .password {
+                height: 41px;
+                width: 97%;
+                border: 0px solid gray;
+                border-radius: 3px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .checkboxContainer {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            /* hide the default checkbox */
+            .checkboxContainer input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border: 2px solid rgb(27, 27, 27);
+                background-color: white;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .checkboxContainer:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a black background */
+            .checkboxContainer input:checked~.checkmark {
+                background-color: rgb(27, 27, 27);
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .checkboxContainer input:checked~.checkmark:after {
+                display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkboxContainer .checkmark:after {
+                left: 7px;
+                top: 2px;
+                width: 6px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .span {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Lato, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgb(31, 31, 31);
+                letter-spacing: -0.45px;
+            }
+
+            #continuebutton {
+                background-color: #222222;
+                color: white;
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+
+            #email {
+                margin-bottom: 4px;
+            }
+
+            /* alert message  */
+            .alertDiv {
+                height: 43px;
+                width: 100%;
+                border-radius: 3px;
+                margin-top: 0px;
+                display: flex;
+                background-color: #fae8e6;
+                align-items: center;
+                display: none;
+            }
+
+            i {
+                color: #c42c21;
+                font-size: 130%;
+                padding-left: 15px;
+            }
+
+            #emailAlert1,
+            #emailAlert2,
+            #emailAlert3,
+            #nameAlert,
+            #passwordAlert1,
+            #passwordAlert2,
+            #passwordAlert3,
+            #cofirmEmail2 {
+                color: #c42c21;
+                margin: 0px;
+                padding: 0px;
+                padding-left: 5px;
+            }
+
+            #emailAlert2,
+            #passwordAlert1,
+            #emailAlert3 {
+                display: none;
+            }
+
+            #alertPassword {
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            /* alert message  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topbar" onclick="location.href='../../index.html'">
+        <div id="imagediv"><img id="image"
+                src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg"
+                alt="logo"></div>
+    </div>
+
+    <div id="container">
+        <div id="content">
+
+            <div id="about">
+                <h1>About You</h1>
+            </div>
+            <div id="txt2">
+                <h2>Sign Up With</h2>
+            </div>
+
+            <div id="social">
+                <div id="facebook">
+                    <img id="fblogo" src="https://brandeps.com/logo-download/F/Facebook-logo-vector-02.svg">
+                    <p>Facebook</p>
+                </div>
+
+                <div id="google">
+                    <img id="googleimg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
+                        alt="Google &quot;G&quot; Logo.svg">
+                    <p>Google</p>
+                </div>
+
+            </div>
+
+            <div>
+                <h2>Or creat an email account</h2>
+            </div>
+            <!-- input name -->
+            <div>
+                <p class="inputtxt">*Full Name</p><input class="input" id="name" type="text" oninput="nameAlert()">
+                <div class="alertDiv" id="alertDiv1"><i id="alertSign" class="material-icons">report_problem</i>
+                    <p class="inputtxt" id="nameAlert">Full Name is a required field</p>
+                </div>
+            </div>
+            <!-- input email -->
+            <div>
+                <p class="inputtxt">*Email address</p><input class="input" id="email" type="email"
+                    oninput="validateEmail()">
+                <div class="alertDiv" id="alertDiv2"><i id="alertSign" class="material-icons">report_problem</i>
+                    <p class="inputtxt" id="emailAlert1">Email address is a required field</p>
+                    <p class="inputtxt" id="emailAlert2">Email address must be a valid email</p>
+                    <p class="inputtxt" id="emailAlert3">This Email Id is already registered! Please Login.</p>
+                </div>
+            </div>
+            <!-- input cofirm email -->
+            <div>
+                <p class="inputtxt">*Confirm Email address</p><input class="input" id="cofirmEmail1" type="email"
+                    oninput="cofirmEmailAlert()">
+                <div class="alertDiv" id="alertDiv3"><i id="alertSign" class="material-icons">report_problem</i>
+                    <p class="inputtxt" id="cofirmEmail2">Email address must match</p>
+                </div>
+            </div>
+            <!-- input password -->
+            <div>
+                <p class="inputtxt">*Password</p>
+                <div class="passwordShow"><input class="password" id="passwordinput" type="password"
+                        oninput="passwordAlert()"> <button id="show1" class="showPassword" type="button">SHOW</button>
+                </div>
+            </div>
+            <div>
+                <p class="inputtxt" id="alertPassword">Include a minimum of 6 characters, and contain at least 1 number
+                </p>
+                <div class="alertDiv" id="alertDiv4"><i id="alertSign" class="material-icons">report_problem</i>
+                    <p class="inputtxt" id="passwordAlert1">Password must be at least 6 characters</p>
+                    <p class="inputtxt" id="passwordAlert2">Password is a required field</p>
+                </div>
+            </div>
+            <!-- input cofirm password -->
+            <div>
+                <p class="inputtxt">*Confirm Password</p>
+                <div class="passwordShow" type="password"><input id="confirmPassword" class="password" type="password"
+                        oninput="confirmPasswordAlert()"> <button id="show2" class="showPassword"
+                        type="button">SHOW</button></div>
+            </div>
+            <div>
+                <div class="alertDiv" id="alertDiv5"><i id="alertSign" class="material-icons">report_problem</i>
+                    <p class="inputtxt" id="passwordAlert3">Password must match</p>
+                </div>
+            </div>
+            <div>
+                <p class="inputtxt">Cell Phone Number <span id="optional">(Optional)</span></p><input
+                    class="input txtMargin0" id="phone" type="text">
+                <p class="inputtxt inputBelowTxt">We will use this number to send occasional promotional messages.</p>
+            </div>
+            <div id="Referral">
+                <p class="inputtxt">Referral Code<span id="optional">(Optional)</span></p><input
+                    class="input txtMargin0 ReferralInput" id="reffer" type="text">
+                <p class="inputtxt inputBelowTxt">* Your referrals discount is automatically applied at cart</p>
+            </div>
+            <div>
+                <p class="inputtxt">Loyalty Reward program</p>
+            </div>
+
+            <div id="checkboxdiv">
+                <label class="checkboxContainer">
+                    <input id="check" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <div id="check_txt">
+                    <p class="inputtxt checkboxTxt"><span class="span">Include me in the Dermstore Rewards
+                            program</span> Read our terms of use.</p>
+                </div>
+            </div>
+            <button class="input inputtxt" id="continuebutton">CONTINUE</button>
+            <div class="inputtxt checkboxTxt"><span class="span">By proceeding, you are confirming that you agree to
+                    our</span> Terms and Conditions <span class="span">and</span> Privacy Policy</div>
+        </div>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelector("#continuebutton").addEventListener("click", clickValidate);
+    document.querySelector("#show1").addEventListener("click", passwordShow1);
+    document.querySelector("#show2").addEventListener("click", passwordShow2);
+
+    function addObject() {
+        var Name = document.querySelector("#name").value;
+        var Email = document.querySelector("#email").value;
+        var Password = document.querySelector("#passwordinput").value;
+        var Phone = document.querySelector("#phone").value;
+        var Refferel = document.querySelector("#reffer").value;
+        var rewardprogram = document.querySelector("#check").checked;
+        var userData = JSON.parse(localStorage.getItem("userDataBase")) || [];
+        var object = {
+            name: Name,
+            email: Email,
+            password: Password,
+            phoneNo: Phone,
+            refferelCode: Refferel,
+            rewardProgram: rewardprogram
+        }
+        userData.push(object);
+        console.log(userData)
+        localStorage.setItem("userDataBase", JSON.stringify(userData))
+    }
+
+    // ! alert confirm email
+
+    function cofirmEmailAlert() {
+        if (document.getElementById("cofirmEmail1").value == document.getElementById("email").value && document
+            .getElementById("email").value != "") {
+            document.getElementById("alertDiv3").style.display = "none";
+        } else if (document.getElementById("email").value == "") {
+            document.getElementById("alertDiv2").style.display = "flex";
+        } else {
+            document.getElementById("alertDiv3").style.display = "flex";
+        }
+    }
+
+    // ! alert cofirm password
+
+    function confirmPasswordAlert() {
+        if (document.getElementById("confirmPassword").value == document.getElementById("passwordinput").value &&
+            document.getElementById("passwordinput").value != "") {
+            document.getElementById("alertDiv5").style.display = "none";
+        } else if (document.getElementById("passwordinput").value == "") {
+            document.getElementById("alertDiv4").style.display = "flex";
+        } else {
+            document.getElementById("alertDiv5").style.display = "flex";
+        }
+    }
+
+    //! alert password
+
+    function passwordAlert() {
+        if (document.getElementById("passwordinput").value.length < 6) {
+            document.getElementById("alertDiv4").style.display = "flex";
+            document.getElementById("passwordAlert1").style.display = "flex";
+            document.getElementById("passwordAlert2").style.display = "none";
+        } else {
+            document.getElementById("alertDiv4").style.display = "none";
+        }
+    }
+
+    //! validate email
+
+    function validateEmail() {
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("email").value)) {
+            document.getElementById("alertDiv2").style.display = "none";
+        } else {
+            document.getElementById("alertDiv2").style.display = "flex";
+            document.getElementById("emailAlert1").style.display = "none";
+            document.getElementById("emailAlert2").style.display = "flex";
+        }
+    }
+    //! Validate email
+
+    function nameAlert() {
+        if (document.getElementById("name").value == "") {
+            document.getElementById("alertDiv1").style.display = "flex";
+        } else {
+            document.getElementById("alertDiv1").style.display = "none";
+        }
+
+    }
+
+    // continue button function
+
+    function clickValidate() {
+        if (document.getElementById("alertDiv1").style.display == "none") {
+            if (document.getElementById("alertDiv2").style.display == "none") {
+                if (document.getElementById("alertDiv3").style.display == "none") {
+                    if (document.getElementById("alertDiv4").style.display == "none") {
+                        if (document.getElementById("alertDiv5").style.display == "none") {
+                            if (document.getElementById("email").value == document.getElementById("cofirmEmail1")
+                                .value) {
+                                if (document.getElementById("passwordinput").value == document.getElementById(
+                                        "confirmPassword").value) {
+                                    checkExitingUser()
+                                } else {
+                                    document.getElementById("alertDiv5").style.display = "flex";
+                                    window.location.href = "#confirmPassword"
+                                }
+                            } else {
+                                document.getElementById("alertDiv3").style.display = "flex";
+                                window.location.href = "#cofirmEmail1"
+                            }
+                        } else {
+                            location.href = "#confirmPassword";
+                        }
+                    } else {
+                        location.href = "#passwordinput";
+                    }
+                } else {
+                    location.href = "#cofirmEmail1";
+                }
+            } else {
+                location.href = "#email";
+            }
+        } else {
+            location.href = "#name";
+        }
+    }
+
+    //checking existing user or not
+    function checkExitingUser() {
+
+        if (isUser()) {
+            document.getElementById("emailAlert3").style.display = "flex";
+            document.getElementById("alertDiv2").style.display = "flex";
+            document.getElementById("emailAlert1").style.display = "none";
+            location.href = "#email";
+        } else {
+            addObject();
+            // enter Home Page URL here....
+            window.location.href = "login.html";
+        }
+    }
+
+    //user information checking in the database...
+    function isUser() {
+
+        var emailId = document.querySelector("#email").value;
+        var match = false;
+        var existingUserData = JSON.parse(localStorage.getItem("userDataBase")) || [];
+        var n = existingUserData.length;
+        for (var i = 0; i < n; i++) {
+            if (existingUserData[i]["email"] == emailId) {
+                match = true;
+            } else {
+                match = false;
+            }
+        }
+        return match;
+    }
+
+    //password show function
+    function passwordShow1() {
+        document.querySelector("#passwordinput").type = "text";
+    }
+
+    function passwordShow2() {
+        document.querySelector("#confirmPassword").type = "text";
+    }
+</script>

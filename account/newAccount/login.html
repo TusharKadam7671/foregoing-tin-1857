@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: #f2f2f2;
+        }
+        /* This is for top bar */
+        #topbar{
+            height: 33px;
+            padding:20px;
+            padding-bottom: 28px;
+            margin-top: -10px;
+            display: flex;
+            padding-left: 108px;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        #imagediv{
+            width:342px;
+            height: 48px;
+            /* border:1px solid green; */
+            padding: 2px 24px;
+            margin-left: 70px;
+            /* border: 1px solid black; */
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+        /* This is for top bar */
+
+        #container{
+            /* border:1px solid red; */
+            width:950px;
+            margin: auto;
+            margin-top: 112px;
+            display: flex;
+            justify-content: center;
+        }
+        #left{
+            /* border:1px solid black; */
+            width:383px;
+            height: 540px; 
+            margin: 15px; 
+            background-color: white;
+            padding: 32px;
+            margin-left: 12px;
+        }
+        #right{
+            /* border:1px solid black; */
+            width:409.25px;
+            height: 125px;
+            margin: 15px; 
+            background-color: white;
+            padding:18px;
+            padding-left: 31px;
+            padding-top: 33px;
+            margin-right:10px ;
+            margin-left: 17px;
+        }
+        #social{
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #facebook {
+            height: 45px;
+            width: 190px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin:0px 10px
+        }
+        #fblogo{
+            height: 70%;
+            padding-right: 7px;
+
+        }
+        #google{
+            height: 45px;
+            width: 190px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        #googleimg{
+         height:50%;
+         padding-right: 8px;
+         
+        }
+        h1{
+            font-weight: normal;
+            font-style: normal;
+            font-size: 25px;
+            line-height: 0px;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            color: rgb(61, 61, 61);
+            padding-bottom: 30px;
+        }
+        .inputtxt{
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            color: rgb(75, 75, 75);
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            padding-top: 10px;
+            margin-bottom: 20px;
+        }
+        .input{
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        input{
+            padding-left: 10px;
+        }
+        .showPassword{
+            border:0px solid red;
+            background-color: white;
+            text-align: center;
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            color: rgb(65, 65, 65);
+        }
+        .passwordShow{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 9px;
+        }
+        .password{
+            height:41px;
+            width:618px;
+            border: 0px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .span{
+            font-weight: normal;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgb(31, 31, 31);
+            letter-spacing: -0.45px;
+        }
+        .button{
+            background-color: #222222;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 0px;
+            height: 50px;
+        }
+        /* alert message  */
+        .alertDiv{
+           height:43px;
+           width: 97%;
+           border-radius: 3px;
+           margin-top: 0px;
+           display: flex;
+           background-color: #fae8e6;
+           align-items: center;
+           display: none;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            color: #c42c21;
+            margin:0px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+        i{
+            color: #c42c21; 
+            font-size: 130%;
+            padding-left: 15px;
+        }
+        #alertPassword{
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            display: none;
+        }
+        /* alert message  */
+
+        /* <--------------------for tablet screen---------------> */
+        @media only screen and (min-width:600px) and (max-width:899px){
+        #topbar{
+            height: 30px;
+            padding:20px;
+            padding-bottom: 28px;
+            display: flex;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+        #container{
+            /* border:1px solid red; */
+            width:700px;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        #left{
+            /* border:1px solid black; */
+            width:500px;
+            margin: auto; 
+            background-color: white;
+            padding: 22px;
+            margin-top:10px;
+            margin-bottom: 10px;
+
+        }
+        #right{
+            /* border:1px solid black; */
+            width:500px;
+            height: 115px;
+            margin: auto; 
+            background-color: white;
+            padding:22px;
+            padding-top: 23px;
+            margin-top: 10px;
+
+        }
+        #imagediv{
+            width:302px;
+            height: 48px;
+            padding: 2px 24px;
+            display: inline-block;
+            /* border: 1px solid black; */
+            margin-left:0px;
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+        /* This is for top bar */
+        #social{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        #facebook {
+            height: 45px;
+            width: 230px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin:0px 10px
+        }
+        #fblogo{
+            height: 75%;
+            padding-right: 7px;
+
+        }
+        #google{
+            height: 45px;
+            width: 230px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        #googleimg{
+         height:55%;
+         padding-right: 8px;
+         
+        }
+        h1{
+            font-weight: normal;
+            font-style: normal;
+            font-size: 27px;
+            line-height: 0px;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+            color: rgb(61, 61, 61);
+            padding-bottom: 15px;
+        }
+        .inputtxt{
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            color: rgb(75, 75, 75);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            padding-top: 8px;
+            margin-bottom: 10px;
+        }
+        .input{
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        input{
+            padding-left: 10px;
+        }
+        .showPassword{
+            border:0px solid red;
+            background-color: white;
+            text-align: center;
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            color: rgb(65, 65, 65);
+        }
+        .passwordShow{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 9px;
+        }
+        .password{
+            height:41px;
+            width:618px;
+            border: 0px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .span{
+            font-weight: normal;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 17px;
+            line-height: 24px;
+            color: rgb(31, 31, 31);
+            letter-spacing: -0.45px;
+        }
+        .button{
+            background-color: #222222;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            height: 50px;
+        }
+        /* alert message  */
+        .alertDiv{
+           height:43px;
+           width: 97%;
+           border-radius: 3px;
+           margin-top: 0px;
+           display: flex;
+           background-color: #fae8e6;
+           align-items: center;
+           display: none;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            color: #c42c21;
+            margin:0px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+        i{
+            color: #c42c21; 
+            font-size: 130%;
+            padding-left: 15px;
+        }
+        #alertPassword{
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            display: none;
+        }
+        /* alert message  */
+    }
+        /* <---------------------for mobile screen----------------------------------> */
+        @media only screen and (min-width:0px) and (max-width:599px){
+        #topbar{
+            height: 30px;
+            padding:20px;
+            padding-bottom: 28px;
+            display: flex;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+            /* border: 1px solid red; */
+        }
+        #container{
+            /* border:1px solid red; */
+            width:98%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: cplumn;
+            /* justify-content: center; */
+        }
+        #left{
+            /* border:1px solid black; */
+            width:85%;
+            height: 510px; 
+            margin: auto; 
+            background-color: white;
+            padding: 22px;
+            margin-top:10px;
+            margin-bottom: 10px;
+
+        }
+        #right{
+            /* border:1px solid black; */
+            width:85%;
+            height: 115px;
+            margin: auto; 
+            background-color: white;
+            padding:22px;
+            padding-top: 23px;
+            margin-top: 10px;
+
+        }
+        #imagediv{
+            width:302px;
+            height: 48px;
+            padding: 2px 24px;
+            display: inline-block;
+            /* border: 1px solid black; */
+            margin-left:0px;
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+        /* This is for top bar */
+        #social{
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        #facebook {
+            height: 35px;
+            width: 230px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin:0px 10px
+        }
+        #fblogo{
+            height: 80%;
+            padding-right: 7px;
+
+        }
+        #google{
+            height: 35px;
+            width: 230px;
+            color: #666666;
+            border:1px solid gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        #googleimg{
+         height:60%;
+         padding-right: 8px;
+         
+        }
+        h1{
+            font-weight: normal;
+            font-style: normal;
+            font-size: 25px;
+            line-height: 0px;
+            letter-spacing: -0.5px;
+            margin-bottom: 0px;
+            color: rgb(61, 61, 61);
+            padding-bottom: 10px;
+        }
+        .inputtxt{
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            color: rgb(75, 75, 75);
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            padding-top: 8px;
+            margin-bottom: 10px;
+        }
+        .input{
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        input{
+            padding-left: 10px;
+        }
+        .showPassword{
+            border:0px solid red;
+            background-color: white;
+            text-align: center;
+            font-weight: 700;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            color: rgb(65, 65, 65);
+        }
+        .passwordShow{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height:43px;
+            width: 97%;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 9px;
+        }
+        .password{
+            height:41px;
+            width:618px;
+            border: 0px solid gray;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .span{
+            font-weight: normal;
+            font-style: normal;
+            font-family: Lato, sans-serif;
+            font-size: 15.5px;
+            line-height: 24px;
+            color: rgb(31, 31, 31);
+            letter-spacing: -0.45px;
+        }
+        .button{
+            background-color: #222222;
+            color: white;
+            padding: 3px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            height: 50px;
+        }
+        /* alert message  */
+        .alertDiv{
+           height:43px;
+           width: 97%;
+           border-radius: 3px;
+           margin-top: 0px;
+           display: flex;
+           background-color: #fae8e6;
+           align-items: center;
+           display: none;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            color: #c42c21;
+            margin:0px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+        i{
+            color: #c42c21; 
+            font-size: 130%;
+            padding-left: 15px;
+        }
+        #alertPassword{
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        #emailAlert1,#emailAlert2,#emailAlert3,#passwordAlert1,#passwordAlert2{
+            display: none;
+        }
+        /* alert message  */
+    }
+            
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="topbar" onclick="location.href='../../index.html'"><div id="imagediv"><img id="image" src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg" alt="logo"></div></div> 
+    <div id="container">
+        <div id="left">
+            <div><h1>Existing Customers</h1></div>
+            <div><p class="inputtxt">*Email address</p><input class="input" id="email" type="email"><div class="alertDiv" id="alertDiv2"><i id="alertSign" class="material-icons">report_problem</i><p  class="inputtxt" id="emailAlert1">Email address is a required field</p><p  class="inputtxt" id="emailAlert2">Email address must be valid email</p><p  class="inputtxt" id="emailAlert3">Email is not registered! Please Sign Up.</p></div></div>
+            <div><p class="inputtxt">*Password</p><div class="passwordShow"><input class="password" id="passwordinput" type="password" oninput="validateEmail()"> <button id="show"class="showPassword" type="button">SHOW</button></div ><div class="alertDiv" id="alertDiv4"><i id="alertSign" class="material-icons">report_problem</i><p  class="inputtxt" id="passwordAlert1">Invalid password</p ><p  class="inputtxt" id="passwordAlert2">Password is a required field</p ></div></div>
+            <div><p class="inputtxt">Forgotten your password?</p></div>
+            <button class="input inputtxt button" id="loginbutton">LOGIN TO YOUR ACCOUNT</button>
+            <div><p class="span">Or,Continue with</p></div>
+            <div id="social">
+                <div id="facebook">
+                    <img id="fblogo"src="https://brandeps.com/logo-download/F/Facebook-logo-vector-02.svg">
+                    <p>Facebook</p>
+                </div>
+                    
+                <div id="google">
+                    <img id="googleimg"src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="Google &quot;G&quot; Logo.svg">
+                    <p>Google</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="right">
+            <h1>New Customers</h1>
+            <button class="input inputtxt button" id="continuebutton">CONTINUE</button>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    //user login 
+    document.querySelector("#loginbutton").addEventListener("click",isValidUser);
+    document.querySelector("#continuebutton").addEventListener("click",redirectFunction);
+    document.querySelector("#show").addEventListener("click",passwordShow);
+
+    function isValidUser(){
+        var [emailMatch,index]=isUser();
+        console.log(emailMatch,index);
+        var emailId=document.querySelector("#email").value;
+        var password=document.querySelector("#passwordinput").value;
+        var existingUserData = JSON.parse(localStorage.getItem("userDataBase")) || [];
+        var n=existingUserData.length;
+            if(emailMatch){
+                if(existingUserData[index]["password"]==password){   
+                    //Enter HOME Page URL here.......
+                    window.location.href="../../index.html";
+                    alert("login suceesfull")                                
+                }
+                else if(existingUserData[index]["password"]!=password  && password!=""){ 
+                      document.querySelector("#alertDiv4").style.display="flex";
+                      document.querySelector("#passwordAlert1").style.display="flex";
+                      document.querySelector("#left").style.height+="615px";
+                      window.location.href="#passwordinput";
+                      console.log(1)
+                }
+                else{
+                    document.querySelector("#alertDiv4").style.display="flex";
+                    document.querySelector("#passwordAlert2").style.display="flex";
+                    document.querySelector("#left").style.height+="615px";
+                    window.location.href="#passwordinput";
+                    console.log(2)
+                }
+
+            }
+            else{
+                if(emailId==""){
+                    document.querySelector("#alertDiv2").style.display="flex";
+                    document.querySelector("#emailAlert1").style.display="flex";
+                    document.querySelector("#emailAlert2").style.display="none";
+                    document.querySelector("#emailAlert3").style.display="none";
+                    document.querySelector("#left").style.height+="615px";
+                    console.log(3)
+                }
+                else{
+                    if(!validEmail()){
+                        document.querySelector("#left").style.height+="615px";
+                        document.getElementById("alertDiv2").style.display="flex"; 
+                        document.getElementById("emailAlert1").style.display="none"; 
+                        document.getElementById("emailAlert2").style.display="flex";   
+                        document.getElementById("emailAlert3").style.display="none";   
+                    }
+                    else{
+                        document.querySelector("#alertDiv2").style.display="flex";
+                        document.querySelector("#emailAlert3").style.display="flex";
+                        document.querySelector("#emailAlert2").style.display="none";
+                        document.querySelector("#left").style.height="615px";   
+                        window.location.href="#email"; 
+                        console.log(5)   
+                    }
+                }
+            }   
+    }
+
+    //! validate email
+
+    function validateEmail(){
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("email").value) || document.getElementById("email").value=="")
+        {
+            document.getElementById("alertDiv4").style.display="none";
+            return true; 
+        }
+        else{
+            document.getElementById("alertDiv2").style.display="flex"; 
+            document.getElementById("emailAlert1").style.display="none"; 
+            document.getElementById("emailAlert2").style.display="flex"; 
+            document.querySelector("#left").style.height+="615px";
+            return false;
+        }    
+    }
+
+    function validEmail(){
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("email").value) || document.getElementById("email").value=="")
+        {
+            return true; 
+        }
+        else{
+            return false;
+        }    
+    }
+
+    
+    //user information checking in the database...
+    function isUser(){
+
+        var emailId=document.querySelector("#email").value;
+        var existingUserData = JSON.parse(localStorage.getItem("userDataBase")) || [];
+        var n=existingUserData.length;
+        for(var i=0;i<n;i++){
+            if(existingUserData[i]["email"]==emailId){
+                return [true,i]            }
+            
+        }
+        return [false,-1];
+    }
+
+    //redirecting to log sign up page
+    function redirectFunction(){
+        window.location.href="signup.html"
+    }
+
+    //password show function
+    function passwordShow(){
+        document.querySelector("#passwordinput").type="text"
+    }
+
+
+</script>

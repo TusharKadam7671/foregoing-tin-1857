@@ -1,9 +1,14 @@
 /* NAVBAR STYLING STARTS */
 
-.tnavbar{
+#tnavbar{
     /* display: flex; */
     width: 100%;
     margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 210;
+    background-color: white;
+   
   }
   .tnavbar_items a{
     font-size: 14px;
@@ -17,6 +22,7 @@
   }
   .tnavbar_items {
     display: flex;
+   
     /* border: 1px solid red; */
   }
   .tnavbar ul{ 
@@ -44,7 +50,7 @@
     visibility: hidden;
     display: flex;
     background-color: white;
-    z-index: 30;
+    z-index: 210;
   }
   .contHainer{
     border-top: 1px solid grey;
@@ -172,6 +178,9 @@ body{
 /* ----------WIDGET STYLING STARTS----------- */
 
 #t_big_box{
+  position: absolute;
+  top: 40px;
+  z-index: 200;
   display: flex;
   /* border: 1px solid red; */
   background-color: #F2F2F2;
@@ -250,6 +259,9 @@ p{
 }
 
 .stripBanner{
+  position: absolute;
+  top: 85px;
+  z-index: 200;
   display: flex;
   /* border: 1px solid red; */
   background-color: #CCCCCC;
